@@ -3,10 +3,12 @@ import "./index.css";
 import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import Main from "./pages/Main";
+import Tools from "./pages/Tools";
 
 ReactDOM.render(
   <React.StrictMode>
     <Main />
+    <Tools />
   </React.StrictMode>,
   document.getElementById("root")
 );
