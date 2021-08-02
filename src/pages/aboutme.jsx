@@ -1,4 +1,5 @@
 import React from "react";
+import ProgressBar from "../components/progressBar/index.jsx";
 import {
   Heading,
   SerialNo,
@@ -25,16 +26,10 @@ const App = () => {
         </SubContent>
         <SubContent>
           <SubHeading>My Skills</SubHeading>
-          // TODO Move it to componenet
-          <div className="relative pt-1">
-            C++
-            <div className="overflow-hidden h-4 mb-4 text-xs flex border-4 border-pink-500 rounded bg-pink-200">
-              <div
-                style={{ width: "80%" }}
-                className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"
-              ></div>
-            </div>
-          </div>
+          <ProgressBar width="90%" language="C++" />
+          <ProgressBar width="60%" language="ReactJs" />
+          <ProgressBar width="80%" language="Javascript" />
+          <ProgressBar width="50%" language="Shell scripting" />
         </SubContent>
       </Content>
     </>

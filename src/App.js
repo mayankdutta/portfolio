@@ -16,6 +16,7 @@ const Pages = styled.div`
   w-screen
   px-20
   py-8
+  my-8
 `};
 `;
 

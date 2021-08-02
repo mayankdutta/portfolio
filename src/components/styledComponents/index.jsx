@@ -42,6 +42,7 @@ export const Content = styled.div`
 flex 
 flex-wrap
 space-x-4
+ml-16
 `}
 `;
 

@@ -7,7 +7,7 @@ const Navbar = styled.ul`
   my-4
   w-screen
   flex
-  px-4
+  px-8
 `};
 `;
 
