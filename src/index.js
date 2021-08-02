@@ -1,16 +1,14 @@
-import React from "react";
-import "./index.css";
-import ReactDOM from "react-dom";
-import reportWebVitals from "./reportWebVitals";
-import Main from "./pages/Main";
-import Tools from "./pages/Tools";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Main />
-    <Tools />
+    <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
