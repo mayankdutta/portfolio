@@ -33,7 +33,7 @@ const NavComponents = styled.li`
 const App = () => {
   return (
     <Navbar>
-      <Logo>LOGO</Logo>
+      <Logo>Resume</Logo>
       <NavComponents>
         <a href="#">Item 1</a>
         <a href="#">Item 2</a>

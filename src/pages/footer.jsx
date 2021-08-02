@@ -4,6 +4,7 @@ import tw from "twin.macro";
 import {
   Heading,
   HiddenHeading,
+  SubHeading,
 } from "../components/styledComponents/index.jsx";
 
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
@@ -28,8 +29,9 @@ const Icon = styled.li`
 const App = () => {
   return (
     <>
-      <Heading>Let's discuss above things in details.</Heading>
+      <Heading>Find something interesting? </Heading>
       <HiddenHeading> Contact </HiddenHeading>
+      <SubHeading>Let's chat</SubHeading>
       <Icons>
         <Icon>
           <AiOutlineMail />

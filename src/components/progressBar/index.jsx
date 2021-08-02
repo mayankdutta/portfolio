@@ -4,10 +4,10 @@ const App = (props) => {
     <>
       <div className="relative pt-1">
         {props.language}
-        <div className="overflow-hidden h-4 mb-4 text-xs flex border-4 border-gray-400 rounded bg-gray-400">
+        <div className="overflow-hidden h-4 mb-4 text-xs flex border-4 border-blue-500 rounded bg-blue-200">
           <div
             style={{ width: props.width }}
-            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-gray-800"
+            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-blue-500"
           ></div>
         </div>
       </div>
