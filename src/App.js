@@ -7,6 +7,8 @@ import AboutMe from "./pages/aboutme.jsx";
 import Tech from "./pages/tech.jsx";
 import Education from "./pages/education.jsx";
 import Projects from "./pages/projects.jsx";
+import Tools from "./pages/tools.jsx";
+import Footer from "./pages/footer.jsx";
 
 const Pages = styled.div`
   height: 90vh;
@@ -35,6 +37,12 @@ const App = () => {
       </Pages>
       <Pages>
         <Projects />
+      </Pages>
+      <Pages>
+        <Tools />
+      </Pages>
+      <Pages>
+        <Footer />
       </Pages>
     </>
   );

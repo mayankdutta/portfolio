@@ -15,6 +15,8 @@ const Logo = styled.li`
   ${tw`
   w-full
   justify-self-start
+  text-3xl
+  font-medium
 `};
 `;
 

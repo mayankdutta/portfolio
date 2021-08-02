@@ -56,8 +56,10 @@ const SubContent = styled.div`
 const App = () => {
   return (
     <>
-      <Heading>Let's discuss above things in details.</Heading>
-      <HiddenHeading> Contact </HiddenHeading>
+      <Heading>
+        <SerialNo>5. </SerialNo> Tools Under my Belt
+      </Heading>
+      <HiddenHeading> Tools </HiddenHeading>
       <Content>
         <SubContent>
           <SubHeading>Hello</SubHeading>
