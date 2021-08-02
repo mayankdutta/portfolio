@@ -10,14 +10,17 @@ const Content = styled.div`
 
 const Heading = styled.div`
   ${tw`
-  text-3xl
+  text-7xl
+  font-light
 
 `};
 `;
 
 const SubHeading = styled.div`
+  width: 30rem;
   ${tw`
   text-xl
+  font-extralight
 `};
 `;
 
@@ -27,7 +30,7 @@ const App = () => {
       <Content>
         <Heading>Mayank Dutta</Heading>
         <SubHeading>
-    doing something doing something doing something doing something 
+          doing something doing something doing something doing something
         </SubHeading>
       </Content>
     </>

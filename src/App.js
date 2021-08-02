@@ -5,6 +5,8 @@ import Welcome from "./pages/welcome.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import AboutMe from "./pages/aboutme.jsx";
 import Tech from "./pages/tech.jsx";
+import Education from "./pages/education.jsx";
+import Projects from "./pages/projects.jsx";
 
 const Pages = styled.div`
   height: 90vh;
@@ -25,7 +27,15 @@ const App = () => {
       <Pages>
         <AboutMe />
       </Pages>
-      <Pages> <Tech /></Pages>
+      <Pages>
+        <Tech />
+      </Pages>
+      <Pages>
+        <Education />
+      </Pages>
+      <Pages>
+        <Projects />
+      </Pages>
     </>
   );
 };
