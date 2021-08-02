@@ -3,10 +3,16 @@ import {
   Heading,
   SerialNo,
   HiddenHeading,
-  SubHeading,
-  Content,
-  SubContent,
+  Icon,
+  Icons,
 } from "../components/styledComponents/index.jsx";
+
+import { SiNeovim } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { BsFillTerminalFill } from "react-icons/bs";
+import { SiVisualstudio } from "react-icons/si";
+import { SiSublimetext } from "react-icons/si";
+import { SiJetbrains } from "react-icons/si";
 
 const App = () => {
   return (
@@ -15,36 +21,32 @@ const App = () => {
         <SerialNo>5. </SerialNo> Tools Under my Belt
       </Heading>
       <HiddenHeading> Tools </HiddenHeading>
-      <Content>
-        <SubContent>
-          <SubHeading>Hello</SubHeading>
-          one hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello
-        </SubContent>
-        <SubContent>
-          <SubHeading>Skills</SubHeading>
-          two hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello hello hello hello hello hello
-          hello hello hello hello hello hello
-        </SubContent>
-      </Content>
+      <Icons>
+        <Icon>
+          <SiGithub />
+        </Icon>
+        Github
+        <Icon>
+          <BsFillTerminalFill />
+        </Icon>
+        Command Line
+        <Icon>
+          <SiVisualstudio />
+        </Icon>
+        Visual studio code
+        <Icon>
+          <SiSublimetext />
+        </Icon>
+        Sublime text
+        <Icon>
+          <SiJetbrains />
+        </Icon>
+        Jetbrains
+        <Icon>
+          <SiNeovim />
+        </Icon>
+        NeoVim
+      </Icons>
     </>
   );
 };

@@ -30,7 +30,7 @@ const App = () => {
       <Content>
         <Heading>Mayank Dutta</Heading>
         <SubHeading>
-          doing something doing something doing something doing something
+         Competitive Programmer, UI/UX designer. I use Vim btw
         </SubHeading>
       </Content>
     </>

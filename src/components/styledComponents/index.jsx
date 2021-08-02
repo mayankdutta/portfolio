@@ -51,3 +51,20 @@ export const SubContent = styled.div`
   ${tw`
 `};
 `;
+
+export const Icons = styled.ul`
+  ${tw`
+flex
+space-x-4
+justify-center
+`}
+`;
+
+export const Icon = styled.li`
+  ${tw`
+  text-4xl
+  text-gray-400
+  hover:text-blue-500
+  list-none
+`}
+`;
