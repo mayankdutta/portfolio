@@ -11,7 +11,7 @@ import Tools from "./pages/tools.jsx";
 import Footer from "./pages/footer.jsx";
 
 const Pages = styled.div`
-  height: 90vh;
+  height: 100vh;
   ${tw`
   w-screen
   px-20

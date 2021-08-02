@@ -17,15 +17,15 @@ export const SerialNo = styled.span`
 
 export const HiddenHeading = styled.div`
   position: relative;
-  bottom: 5.5rem;
-  left: 10rem;
   z-index: -1;
+  color: #ebebeb;
   ${tw`
+  left-40
+  bottom-20
   text-9xl
   inline-flex
   tracking-widest
   font-extrabold
-  text-gray-300
 `};
 `;
 
