@@ -1,14 +1,16 @@
 import React from "react";
-import styled from "styled-components";
 import tw from "twin.macro";
+import styled from "styled-components";
 import Welcome from "./pages/welcome.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
+import AboutMe from "./pages/aboutme.jsx";
+import Tech from "./pages/tech.jsx";
 
 const Pages = styled.div`
   height: 90vh;
   ${tw`
   w-screen
-  px-16
+  px-20
   py-8
 `};
 `;
@@ -20,7 +22,10 @@ const App = () => {
       <Pages>
         <Welcome />
       </Pages>
-      <Pages>hello</Pages>
+      <Pages>
+        <AboutMe />
+      </Pages>
+      <Pages> <Tech /></Pages>
     </>
   );
 };
