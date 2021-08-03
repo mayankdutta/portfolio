@@ -4,14 +4,14 @@ import tw from "twin.macro";
 
 const Card = styled.div`
   ${tw`
-  flex
-  flex-wrap
+  grid
+  grid-cols-2
+  mx-4
 border-4
 border-transparent
 space-x-2
 hover:shadow
 hover:bg-gray-50
-ml-32
 `}
 `;
 
@@ -27,11 +27,13 @@ h-full
 `;
 
 const CardImage = styled.div`
+  width: 50%;
   ${tw`
-  h-24
-  w-24
-  rounded-full
   shadow
+  flex
+  justify-center
+  items-center
+
 `}
 `;
 
@@ -39,11 +41,10 @@ const CardTitle = styled.div`
   ${tw`
   text-xl
   flex
-items-center
 justify-center
 `}
 `;
-const CardContent = styled.div`
+const CardContent = styled.span`
   ${tw`
   text-base
   flex
@@ -58,7 +59,7 @@ const App = (props) => {
     <Card>
       <CardHeader>
         <CardImage>
-          <img src={props.link} />
+          <img src={props.link} className="flex justify-center items-center" />
         </CardImage>
         <CardTitle>{props.name}</CardTitle>
       </CardHeader>

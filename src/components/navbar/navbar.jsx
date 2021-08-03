@@ -11,6 +11,7 @@ const Navbar = styled.ul`
   sticky top-4
   bg-gray-100
   bg-opacity-50
+  rounded-2xl
   shadow
 `};
 `;

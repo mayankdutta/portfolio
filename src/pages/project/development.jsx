@@ -1,7 +1,17 @@
 import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 import Card from "../../components/card/index.jsx";
-import { SubContent } from "../../components/styledComponents/index.jsx";
+import {} from "../../components/styledComponents/index.jsx";
 
+const SubContent = styled.div`
+  min-width: 40vw;
+  ${tw`
+grid
+grid-cols-2
+gap-y-8
+`};
+`;
 const App = () => {
   return (
     <>
@@ -9,7 +19,8 @@ const App = () => {
         <Card
           name="Google keep"
           link="https://www.google.com/images/icons/product/keep-512.png"
-          content="make this as a project while learning the very basics of the react"
+          content="
+    hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello "
         />
         <Card
           name="Stalker"
