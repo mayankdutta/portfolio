@@ -1,19 +1,26 @@
 import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 import Card from "../../components/card/index.jsx";
 import {
   SubHeading,
   SubContent,
 } from "../../components/styledComponents/index.jsx";
 
+const CardPlace = styled.div`
+  ${tw`
+
+`}
+`;
+
 const App = () => {
   return (
     <>
       <SubContent>
-        <SubHeading>Development</SubHeading>
-        // TODO add about, and add few lines, and logos
         <Card
-          name="Goolge keep"
+          name="Google keep"
           link="https://www.google.com/images/icons/product/keep-512.png"
+          content="make this as a project while learning the very basics of the react"
         />
         <Card
           name="Stalker"
@@ -23,8 +30,6 @@ const App = () => {
           name="RTO"
           link="https://pbs.twimg.com/profile_images/1137634760879034369/BAJJJ13E_400x400.jpg"
         />
-        // TODO neovim, scripts // TODO if necessary break down these into 2
-        diff pages
       </SubContent>
     </>
   );

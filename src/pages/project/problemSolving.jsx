@@ -9,7 +9,6 @@ const App = () => {
   return (
     <>
       <SubContent>
-        <SubHeading>Problem Solving</SubHeading>
         <Card
           name="codeforces"
           link="https://play-lh.googleusercontent.com/WsR_f03nbqW3qZjCZeXUYmnmhSWXo3hQhLX9hgl9QHydCgbXQi_VJeAwnmtuIgTHKdQ"

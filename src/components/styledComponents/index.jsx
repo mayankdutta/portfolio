@@ -40,15 +40,14 @@ export const SubHeading = styled.div`
 export const Content = styled.div`
   ${tw`
 flex 
-flex-wrap
-space-x-4
-ml-16
+flex-col
+space-y-16
 `}
 `;
 
 export const SubContent = styled.div`
   min-width: 40vw;
-  max-width: 40vw;
+  max-width: 60vw;
   ${tw`
 `};
 `;
@@ -68,4 +67,13 @@ export const Icon = styled.li`
   hover:text-blue-500
   list-none
 `}
+`;
+export const Pages = styled.div`
+  ${tw`
+  h-screen
+  w-screen
+  px-20
+  py-8
+  my-8
+`};
 `;
