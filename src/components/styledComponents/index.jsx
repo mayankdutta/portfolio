@@ -290,10 +290,11 @@ export const Icon = styled.li`
 `}
 `;
 export const ButtonLarge = styled.div`
+  cursor: pointer;
   ${tw`
   flex
   flex-wrap
   justify-center
   space-x-4
-`}
+`};
 `;

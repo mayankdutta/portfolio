@@ -16,6 +16,10 @@ import {
   SiVisualstudio,
   SiSublimetext,
   SiJetbrains,
+  SiCodeforces,
+  SiCodechef,
+  SiHappycow,
+  SiCodecademy,
 } from "react-icons/si";
 
 import { BsFillTerminalFill } from "react-icons/bs";
@@ -195,6 +199,49 @@ export const Vs = () => {
         <SiVisualstudio />
       </span>
       Visual studio code
+    </Logo>
+  );
+};
+
+export const CF = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-gray-800 mx-2"}>
+        <SiCodeforces />
+      </span>
+      Cf
+    </Logo>
+  );
+};
+
+export const CC = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-yellow-800 mx-2"}>
+        <SiCodechef />
+      </span>
+      CC
+    </Logo>
+  );
+};
+
+export const USACO = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+        <SiHappycow />
+      </span>
+      USACO
+    </Logo>
+  );
+};
+export const CA = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+        <SiCodecademy />
+      </span>
+      CA
     </Logo>
   );
 };
