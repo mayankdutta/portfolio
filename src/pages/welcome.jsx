@@ -4,8 +4,6 @@ import tw from "twin.macro";
 
 const Content = styled.div`
   ${tw`
-  border-4
-  border-red-500
     w-full 
     flex flex-col flex-grow justify-center items-center
 `};

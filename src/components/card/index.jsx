@@ -4,8 +4,8 @@ import tw from "twin.macro";
 
 const Card = styled.div`
   ${tw`
-  grid
-  grid-cols-2
+  flex
+  flex-nowrap
   mx-4
 border-4
 border-transparent
@@ -27,13 +27,11 @@ h-full
 `;
 
 const CardImage = styled.div`
-  width: 50%;
   ${tw`
+  h-24
+  w-24
+  rounded-full
   shadow
-  flex
-  justify-center
-  items-center
-
 `}
 `;
 
@@ -41,6 +39,7 @@ const CardTitle = styled.div`
   ${tw`
   text-xl
   flex
+items-center
 justify-center
 `}
 `;
@@ -49,6 +48,8 @@ const CardContent = styled.span`
   text-base
   flex
   flex-wrap
+  flex-shrink
+  flex-grow
   items-center
   justify-center
 `}
@@ -59,7 +60,7 @@ const App = (props) => {
     <Card>
       <CardHeader>
         <CardImage>
-          <img src={props.link} className="flex justify-center items-center" />
+          <img src={props.link} />
         </CardImage>
         <CardTitle>{props.name}</CardTitle>
       </CardHeader>

@@ -1,41 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
-
-const Navbar = styled.ul`
-  ${tw`
-  my-4
-  py-4
-  w-screen
-  flex
-  sticky top-4
-  bg-gray-100
-  bg-opacity-50
-  rounded-2xl
-  shadow
-`};
-`;
-
-const Logo = styled.li`
-  ${tw`
-  w-full
-  mr-10
-  flex
-  flex-row-reverse
-  text-2xl
-  font-medium
-`};
-`;
-
-const NavComponents = styled.li`
-  ${tw`
-  w-full
-  justify-self-end
-  flex
-  justify-end
-  space-x-4
-`};
-`;
+import { Navbar, Logo } from "../../components/styledComponents/index.jsx";
 
 const App = () => {
   return (

@@ -10,7 +10,7 @@ import {
 } from "../../components/styledComponents/index.jsx";
 
 const style =
-  "text-4xl tracking-wide font-medium  rounded-2xl p-4 border-4 border-gray-400";
+  "text-2xl tracking-wide font-medium  rounded-2xl p-4 border-4 border-gray-400";
 
 const App = () => {
   const [rendercp, setRendercp] = useState(true);
@@ -32,7 +32,7 @@ const App = () => {
               setCurrStyleDevelopment(style);
             }}
           >
-            ProblemSolving
+            Problem Solving
           </div>
           <div
             className={currStyleDevelopment}

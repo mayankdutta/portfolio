@@ -19,8 +19,18 @@ const App = () => {
         <Card
           name="Google keep"
           link="https://www.google.com/images/icons/product/keep-512.png"
-          content="
-    hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello hello "
+          content={
+            <div>
+              <h1>
+                hello hello hello hello hello hello hello hello hello hello
+                hello hello hello hello hello hello
+              </h1>
+              <h1>
+                break hello hello hello hello hello hello hello hello hello
+                hello hello hello hello hello hello
+              </h1>
+            </div>
+          }
         />
         <Card
           name="Stalker"

@@ -1,6 +1,41 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
+export const Navbar = styled.ul`
+  ${tw`
+  my-4
+  py-4
+  w-screen
+  flex
+  sticky top-4
+  bg-gray-100
+  bg-opacity-50
+  rounded-2xl
+  shadow
+`};
+`;
+
+export const Logo = styled.li`
+  ${tw`
+  w-full
+  mr-10
+  flex
+  flex-row-reverse
+  text-2xl
+  font-medium
+`};
+`;
+
+export const NavComponents = styled.li`
+  ${tw`
+  w-full
+  justify-self-end
+  flex
+  justify-end
+  space-x-4
+`};
+`;
+
 export const Heading = styled.div`
   ${tw`
   text-7xl
@@ -34,6 +69,31 @@ export const SubHeading = styled.div`
   text-4xl
   tracking-wide
   font-medium
+`};
+`;
+
+export const SubHiddenHeading = styled.div`
+  ${tw`
+  text-4xl
+  tracking-wide
+  font-light
+  text-gray-500
+`};
+`;
+
+export const MainHeading = styled.div`
+  ${tw`
+  text-4xl
+  tracking-wider
+  font-light
+`};
+`;
+
+export const MinorHeading = styled.span`
+  ${tw`
+  text-xl
+  tracking-wider
+  font-bold
 `};
 `;
 
@@ -72,7 +132,6 @@ export const Icon = styled.li`
 `}
 `;
 export const Pages = styled.div`
-  border: solid 4px gold;
   min-height: 80vh;
   ${tw`
   w-screen
