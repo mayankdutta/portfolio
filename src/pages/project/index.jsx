@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
 import ProblemSolving from "./problemSolving.jsx";
 import Development from "./development.jsx";
 import {
@@ -8,35 +6,19 @@ import {
   SerialNo,
   HiddenHeading,
   Content,
+  ButtonLarge,
 } from "../../components/styledComponents/index.jsx";
 
-const style = "text-4xl tracking-wide font-medium border-4 border-gray-800";
-
-const Button = styled.div`
-  ${tw`
-flex
-flex-wrap
-justify-center
-space-x-4
-border-4
-border-red-800
-`}
-`;
-
-export const Pages = styled.div`
-  ${tw`
-  h-screen
-  w-screen
-  px-20
-  py-8
-  my-8
-`};
-`;
+const style = "text-4xl tracking-wide font-medium  rounded-2xl p-4 ";
 
 const App = () => {
   const [rendercp, setRendercp] = useState(true);
-  const [currStyleCp, setCurrStyleCp] = useState(style);
-  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(style);
+  const [currStyleCp, setCurrStyleCp] = useState(
+    style + " bg-gray-400 border-transparent"
+  );
+  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(
+    style + " border-4 border-gray-400"
+  );
   return (
     <>
       <Heading>
@@ -44,13 +26,13 @@ const App = () => {
       </Heading>
       <HiddenHeading> Projects </HiddenHeading>
       <Content>
-        <Button>
+        <ButtonLarge>
           <div
             className={currStyleCp}
             onClick={() => {
               setRendercp(true);
-              setCurrStyleCp(currStyleCp + " bg-gray-400");
-              setCurrStyleDevelopment(style);
+              setCurrStyleCp(style + "  bg-gray-400 ");
+              setCurrStyleDevelopment(style + " border-4 border-gray-400");
             }}
           >
             ProblemSolving
@@ -59,14 +41,14 @@ const App = () => {
             className={currStyleDevelopment}
             onClick={() => {
               setRendercp(false);
-              setCurrStyleCp(style);
-              setCurrStyleDevelopment(currStyleDevelopment + " bg-gray-400");
+              setCurrStyleCp(style + " border-4 border-gray-400");
+              setCurrStyleDevelopment(style + "  bg-gray-400 ");
             }}
           >
             Development
           </div>
-        </Button>
-        <Pages>{rendercp ? <ProblemSolving /> : <Development />}</Pages>
+        </ButtonLarge>
+        {rendercp ? <ProblemSolving /> : <Development />}
       </Content>
     </>
   );

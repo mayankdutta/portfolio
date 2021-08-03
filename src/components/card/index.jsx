@@ -8,8 +8,10 @@ const Card = styled.div`
   flex-wrap
 border-4
 border-transparent
-hover:border-gray-800
 space-x-2
+hover:shadow
+hover:bg-gray-50
+my-4
 `}
 `;
 

@@ -4,7 +4,9 @@ import tw from "twin.macro";
 
 const Content = styled.div`
   ${tw`
-   h-full flex flex-col flex-grow justify-center items-center
+  border-4
+  border-red-500
+   h-screen w-full flex flex-col flex-grow justify-center items-center
 `};
 `;
 
@@ -26,14 +28,12 @@ const SubHeading = styled.div`
 
 const App = () => {
   return (
-    <>
-      <Content>
-        <Heading>Mayank Dutta</Heading>
-        <SubHeading>
-         Competitive Programmer, UI/UX designer. I use Vim btw
-        </SubHeading>
-      </Content>
-    </>
+    <Content>
+      <Heading>Mayank Dutta</Heading>
+      <SubHeading>
+        Competitive Programmer, UI/UX designer. I use Vim btw
+      </SubHeading>
+    </Content>
   );
 };
 

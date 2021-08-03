@@ -54,9 +54,11 @@ export const SubContent = styled.div`
 
 export const Icons = styled.ul`
   ${tw`
-flex
-space-x-4
-justify-center
+grid
+grid-cols-3
+gap-x-0
+gap-y-4
+px-16
 `}
 `;
 
@@ -69,11 +71,20 @@ export const Icon = styled.li`
 `}
 `;
 export const Pages = styled.div`
+  border: solid 4px gold;
+  min-height: 100vh;
   ${tw`
-  h-screen
   w-screen
   px-20
   py-8
   my-8
 `};
+`;
+export const ButtonLarge = styled.div`
+  ${tw`
+flex
+flex-wrap
+justify-center
+space-x-4
+`}
 `;

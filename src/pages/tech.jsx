@@ -1,6 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
 import {
   Cpp,
   ReactJs,
@@ -16,18 +14,8 @@ import {
   Heading,
   SerialNo,
   HiddenHeading,
+  Icons,
 } from "../components/styledComponents/index.jsx";
-
-const Logos = styled.div`
-  ${tw`
-flex
-flex-wrap
-space-x-4
-space-y-4
-justify-center
-px-16
-`};
-`;
 
 const App = () => {
   return (
@@ -36,7 +24,7 @@ const App = () => {
         <SerialNo>2.</SerialNo>Tech, I am familiar with
       </Heading>
       <HiddenHeading>Tech Stack</HiddenHeading>
-      <Logos>
+      <Icons>
         <Cpp />
         <ReactJs />
         <Html />
@@ -46,7 +34,7 @@ const App = () => {
         <Bash />
         <Bootstrap />
         <Vim />
-      </Logos>
+      </Icons>
     </>
   );
 };

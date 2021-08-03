@@ -1,6 +1,4 @@
 import React from "react";
-import tw from "twin.macro";
-import styled from "styled-components";
 import Welcome from "./pages/welcome.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import AboutMe from "./pages/aboutme.jsx";
@@ -9,16 +7,7 @@ import Education from "./pages/education.jsx";
 import Projects from "./pages/project/index.jsx";
 import Tools from "./pages/tools.jsx";
 import Footer from "./pages/footer.jsx";
-
-const Pages = styled.div`
-  height: 100vh;
-  ${tw`
-  w-screen
-  px-20
-  py-8
-  my-8
-`};
-`;
+import { Pages } from "./components/styledComponents/index.jsx";
 
 const App = () => {
   return (
