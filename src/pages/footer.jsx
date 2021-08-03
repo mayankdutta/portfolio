@@ -37,13 +37,31 @@ const App = () => {
     <Footer>
       <Icons>
         <Icon>
-          <AiOutlineMail />
+          <a
+            href="mailto:smayankdutt@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiOutlineMail />
+          </a>
         </Icon>
         <Icon>
-          <AiFillGithub />
+          <a
+            href="https://github.com/mayankdutta"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub />
+          </a>
         </Icon>
         <Icon>
-          <AiFillLinkedin />
+          <a
+            href="https://www.linkedin.com/in/mayank-dutta-5a5640157/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillLinkedin />
+          </a>
         </Icon>
       </Icons>
       <Icons>

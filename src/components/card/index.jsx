@@ -3,25 +3,23 @@ import styled from "styled-components";
 import tw from "twin.macro";
 
 const Card = styled.div`
+  border: 2px solid #8c8c8c;
   ${tw`
   flex
   flex-nowrap
   mx-4
-  border-4
-  border-transparent
   space-x-2
-  hover:shadow
-  hover:bg-gray-50
+  hover:shadow-2xl
+  rounded-2xl
 `}
 `;
 
 const CardHeader = styled.div`
+  border-right: 2px solid #8c8c8c;
   ${tw`
   flex
   flex-col
   p-2
-  border-2
-  border-gray-400
   h-full
 `}
 `;
@@ -31,7 +29,6 @@ const CardImage = styled.div`
   h-24
   w-24
   rounded-full
-  shadow
 `}
 `;
 

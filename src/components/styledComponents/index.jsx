@@ -1,14 +1,63 @@
 import styled from "styled-components";
 import tw from "twin.macro";
 
+export const CustomPages = styled.div`
+  min-height: 80vh;
+  background-color: #aaaaaa;
+  ${tw`
+  w-screen
+  flex
+  justify-center
+  items-center
+
+  px-4
+  py-0
+  pt-2
+  my-1
+
+  md:px-12
+  md:py-2
+  md:pt-6
+  md:my-4
+
+  lg:px-32
+  lg:py-8
+  lg:pt-20
+  lg:my-8
+`};
+`;
+
+export const Pages = styled.div`
+  min-height: 80vh;
+  background-color: #aaaaaa;
+  z-index: -2;
+  ${tw`
+  w-screen
+
+  px-4
+  py-0
+  pt-2
+  my-1
+
+  md:px-12
+  md:py-2
+  md:pt-6
+  md:my-4
+
+  lg:px-32
+  lg:py-8
+  lg:pt-20
+  lg:my-8
+`};
+`;
 export const Navbar = styled.ul`
+  background-color: #8c8c8c;
   ${tw`
   my-4
   py-2
   w-screen
   flex
   sticky top-2
-  bg-gray-100
   bg-opacity-50
   rounded-xl
   shadow
@@ -18,7 +67,6 @@ export const Navbar = styled.ul`
   md:w-screen
   md:flex
   md:sticky top-4
-  md:bg-gray-100
   md:bg-opacity-50
   md:rounded-2xl
   md:shadow
@@ -28,7 +76,6 @@ export const Navbar = styled.ul`
   lg:w-screen
   lg:flex
   lg:sticky top-4
-  lg:bg-gray-100
   lg:bg-opacity-50
   lg:rounded-2xl
   lg:shadow
@@ -71,6 +118,8 @@ export const NavComponents = styled.li`
 `;
 
 export const Heading = styled.div`
+  position: relative;
+  z-index: 1;
   ${tw`
   text-3xl
   md:text-6xl
@@ -91,8 +140,9 @@ export const SerialNo = styled.span`
 
 export const HiddenHeading = styled.div`
   position: relative;
-  z-index: -1;
-  color: #ebebeb;
+  z-index: 0;
+  color: #8c8c8c;
+
   ${tw`
   left-8
   bottom-4
@@ -238,27 +288,6 @@ export const Icon = styled.li`
   lg:hover:text-blue-500
   lg:list-none
 `}
-`;
-export const Pages = styled.div`
-  min-height: 80vh;
-  ${tw`
-  w-screen
-
-  px-4
-  py-0
-  pt-2
-  my-1
-
-  md:px-12
-  md:py-2
-  md:pt-6
-  md:my-4
-
-  lg:px-32
-  lg:py-8
-  lg:pt-20
-  lg:my-8
-`};
 `;
 export const ButtonLarge = styled.div`
   ${tw`

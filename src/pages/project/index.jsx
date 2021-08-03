@@ -28,7 +28,7 @@ const App = () => {
             className={currStyleCp}
             onClick={() => {
               setRendercp(true);
-              setCurrStyleCp(style + "  bg-gray-400 ");
+              setCurrStyleCp(style + "  bg-gray-600 text-gray-800");
               setCurrStyleDevelopment(style);
             }}
           >
@@ -39,7 +39,7 @@ const App = () => {
             onClick={() => {
               setRendercp(false);
               setCurrStyleCp(style);
-              setCurrStyleDevelopment(style + "  bg-gray-400 ");
+              setCurrStyleDevelopment(style + "  bg-gray-600 text-gray-800");
             }}
           >
             Development

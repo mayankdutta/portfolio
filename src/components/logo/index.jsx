@@ -39,8 +39,11 @@ border-transparent
 font-sans
 font-medium
 
+text-black
+
 hover:shadow-xl
-hover:text-blue-400
+hover:text-black
+hover:font-bold
 hover:shadow
 `};
 `;
@@ -48,7 +51,7 @@ hover:shadow
 export const Cpp = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+      <span className={"text-4xl list-none text-blue-700 mx-2"}>
         <SiCplusplus />
       </span>
       C++
@@ -58,7 +61,7 @@ export const Cpp = () => {
 export const ReactJs = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-blue-600 mx-2"}>
+      <span className={"text-4xl list-none text-blue-800 mx-2"}>
         <SiReact />
       </span>
       ReactJs
@@ -68,7 +71,7 @@ export const ReactJs = () => {
 export const Bootstrap = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-purple-500 mx-2"}>
+      <span className={"text-4xl list-none text-purple-700 mx-2"}>
         <SiBootstrap />
       </span>
       Bootstrap
@@ -88,7 +91,7 @@ export const Bash = () => {
 export const Tailwind = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-blue-300 mx-2"}>
+      <span className={"text-4xl list-none text-blue-600 mx-2"}>
         <SiTailwindcss />
       </span>
       Tailwind
@@ -98,7 +101,7 @@ export const Tailwind = () => {
 export const Css = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-yellow-500 mx-2"}>
+      <span className={"text-4xl list-none text-yellow-600 mx-2"}>
         <SiCss3 />
       </span>
       CSS
@@ -108,7 +111,7 @@ export const Css = () => {
 export const Vim = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-green-500 mx-2"}>
+      <span className={"text-4xl list-none text-green-700 mx-2"}>
         <SiVim />
       </span>
       vimscript
@@ -118,7 +121,7 @@ export const Vim = () => {
 export const Html = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-red-500 mx-2"}>
+      <span className={"text-4xl list-none text-red-700 mx-2"}>
         <SiHtml5 />
       </span>
       HTML
@@ -128,7 +131,7 @@ export const Html = () => {
 export const Js = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-yellow-500 mx-2"}>
+      <span className={"text-4xl list-none text-yellow-800 mx-2"}>
         <DiJavascript1 />
       </span>
       Js
@@ -148,7 +151,7 @@ export const Git = () => {
 export const Terminal = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-purple-500 mx-2"}>
+      <span className={"text-4xl list-none text-purple-800 mx-2"}>
         <BsFillTerminalFill />
       </span>
       Terminal
@@ -158,7 +161,7 @@ export const Terminal = () => {
 export const Neovim = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-green-500 mx-2"}>
+      <span className={"text-4xl list-none text-green-700 mx-2"}>
         <SiNeovim />
       </span>
       Neovim
@@ -178,7 +181,7 @@ export const Sublime = () => {
 export const Jetbrains = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-gray-500 mx-2"}>
+      <span className={"text-4xl list-none text-gray-800 mx-2"}>
         <SiJetbrains />
       </span>
       Jetbrains
@@ -188,7 +191,7 @@ export const Jetbrains = () => {
 export const Vs = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+      <span className={"text-4xl list-none text-blue-700 mx-2"}>
         <SiVisualstudio />
       </span>
       Visual studio code
