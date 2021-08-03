@@ -1,17 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
 import Card from "../../components/card/index.jsx";
-import {
-  SubHeading,
-  SubContent,
-} from "../../components/styledComponents/index.jsx";
-
-const CardPlace = styled.div`
-  ${tw`
-
-`}
-`;
+import { SubContent } from "../../components/styledComponents/index.jsx";
 
 const App = () => {
   return (
@@ -29,6 +18,10 @@ const App = () => {
         <Card
           name="RTO"
           link="https://pbs.twimg.com/profile_images/1137634760879034369/BAJJJ13E_400x400.jpg"
+        />
+        <Card
+          name="LunarVim"
+          link="https://repository-images.githubusercontent.com/145050544/3387d880-dc4f-11eb-8ecf-609ba3ec8a40"
         />
       </SubContent>
     </>

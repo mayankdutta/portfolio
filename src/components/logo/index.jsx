@@ -2,22 +2,24 @@ import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 
-import { SiCplusplus } from "react-icons/si";
-import { SiReact } from "react-icons/si";
-import { SiBootstrap } from "react-icons/si";
-import { SiTailwindcss } from "react-icons/si";
-import { SiGnubash } from "react-icons/si";
-import { SiCss3 } from "react-icons/si";
-import { SiVim } from "react-icons/si";
-import { SiHtml5 } from "react-icons/si";
-import { DiJavascript1 } from "react-icons/di";
+import {
+  SiCplusplus,
+  SiReact,
+  SiBootstrap,
+  SiTailwindcss,
+  SiGnubash,
+  SiCss3,
+  SiVim,
+  SiHtml5,
+  SiNeovim,
+  SiGithub,
+  SiVisualstudio,
+  SiSublimetext,
+  SiJetbrains,
+} from "react-icons/si";
 
-import { SiNeovim } from "react-icons/si";
-import { SiGithub } from "react-icons/si";
 import { BsFillTerminalFill } from "react-icons/bs";
-import { SiVisualstudio } from "react-icons/si";
-import { SiSublimetext } from "react-icons/si";
-import { SiJetbrains } from "react-icons/si";
+import { DiJavascript1 } from "react-icons/di";
 
 const Logo = styled.div`
   ${tw`

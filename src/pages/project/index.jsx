@@ -9,16 +9,13 @@ import {
   ButtonLarge,
 } from "../../components/styledComponents/index.jsx";
 
-const style = "text-4xl tracking-wide font-medium  rounded-2xl p-4 ";
+const style =
+  "text-4xl tracking-wide font-medium  rounded-2xl p-4 border-4 border-gray-400";
 
 const App = () => {
   const [rendercp, setRendercp] = useState(true);
-  const [currStyleCp, setCurrStyleCp] = useState(
-    style + " bg-gray-400 border-transparent"
-  );
-  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(
-    style + " border-4 border-gray-400"
-  );
+  const [currStyleCp, setCurrStyleCp] = useState(style + " bg-gray-400 ");
+  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(style);
   return (
     <>
       <Heading>
@@ -32,7 +29,7 @@ const App = () => {
             onClick={() => {
               setRendercp(true);
               setCurrStyleCp(style + "  bg-gray-400 ");
-              setCurrStyleDevelopment(style + " border-4 border-gray-400");
+              setCurrStyleDevelopment(style);
             }}
           >
             ProblemSolving
@@ -41,7 +38,7 @@ const App = () => {
             className={currStyleDevelopment}
             onClick={() => {
               setRendercp(false);
-              setCurrStyleCp(style + " border-4 border-gray-400");
+              setCurrStyleCp(style);
               setCurrStyleDevelopment(style + "  bg-gray-400 ");
             }}
           >

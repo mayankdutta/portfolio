@@ -6,6 +6,7 @@ import Tech from "./pages/tech.jsx";
 import Education from "./pages/education.jsx";
 import Projects from "./pages/project/index.jsx";
 import Tools from "./pages/tools.jsx";
+import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
 import { Pages } from "./components/styledComponents/index.jsx";
 
@@ -32,8 +33,9 @@ const App = () => {
         <Tools />
       </Pages>
       <Pages>
-        <Footer />
+        <Contact />
       </Pages>
+      <Footer />
     </>
   );
 };

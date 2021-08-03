@@ -1,12 +1,21 @@
 import React from "react";
+import styled from "styled-components";
+import tw from "twin.macro";
 import {
   Heading,
   SerialNo,
   HiddenHeading,
-  SubHeading,
   Content,
   SubContent,
 } from "../components/styledComponents/index.jsx";
+
+const SubHeading = styled.div`
+  ${tw`
+  text-4xl
+  tracking-wide
+  font-medium
+`};
+`;
 
 const App = () => {
   return (
@@ -17,29 +26,19 @@ const App = () => {
       <HiddenHeading>Education</HiddenHeading>
       <Content>
         <SubContent>
-          <SubHeading> Idhar gya </SubHeading>
-          <div>Ye kra</div>
-          <div>Itne saal tk kra </div>
-          <div>krta gya </div>
-          <div>Ye seekha </div>
+          <SubHeading> Little Flowers public sr. sec. school</SubHeading>
+          <div>Class 10th: 10CGPA</div>
+          <div>Class 12th: 88.8%</div>
         </SubContent>
       </Content>
       <Content>
         <SubContent>
-          <SubHeading> Udhar gya </SubHeading>
-          <div>wo kra</div>
-          <div>Itne saal tk kra </div>
-          <div>krta gya </div>
-          <div>Ye seekha </div>
-        </SubContent>
-      </Content>
-      <Content>
-        <SubContent>
-          <SubHeading> pta ni kaha gya ab </SubHeading>
-          <div>wo kra</div>
-          <div>Itne saal tk kra </div>
-          <div>krta gya </div>
-          <div>Ye seekha </div>
+          <SubHeading> Faculty of Engineering Jamia Millia Islamia </SubHeading>
+          <div>
+            B.tech in Electrical Engineering(major) and computer science(minor)
+          </div>
+          <div>GPA till now: 8.57</div>
+          <div>Expected 2023</div>
         </SubContent>
       </Content>
     </>

@@ -1,19 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
-import {
-  Heading,
-  HiddenHeading,
-  SubHeading,
-} from "../components/styledComponents/index.jsx";
-
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+const Footer = styled.div`
+  ${tw`
+  py-4
 
+`}
+`;
 const Icons = styled.ul`
   ${tw`
 flex
 space-x-4
 justify-center
+items-end
 `}
 `;
 
@@ -25,13 +25,9 @@ const Icon = styled.li`
   list-none
 `}
 `;
-
 const App = () => {
   return (
-    <>
-      <Heading>Find something interesting? </Heading>
-      <HiddenHeading> Contact </HiddenHeading>
-      <SubHeading>Let's chat</SubHeading>
+    <Footer>
       <Icons>
         <Icon>
           <AiOutlineMail />
@@ -43,7 +39,12 @@ const App = () => {
           <AiFillLinkedin />
         </Icon>
       </Icons>
-    </>
+      <Icons>
+        <div className="font-sans italic font-light my-4">
+          crafted from sratch by mayank
+        </div>
+      </Icons>
+    </Footer>
   );
 };
 

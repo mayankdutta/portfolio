@@ -11,7 +11,7 @@ border-transparent
 space-x-2
 hover:shadow
 hover:bg-gray-50
-my-4
+ml-32
 `}
 `;
 

@@ -75,8 +75,9 @@ export const Pages = styled.div`
   min-height: 100vh;
   ${tw`
   w-screen
-  px-20
+  px-32
   py-8
+  pt-20
   my-8
 `};
 `;
