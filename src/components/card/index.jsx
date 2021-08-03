@@ -59,9 +59,11 @@ const App = (props) => {
   return (
     <Card>
       <CardHeader>
-        <CardImage>
-          <img src={props.link} />
-        </CardImage>
+        <a href={props.href} target="_blank" rel="noopener noreferrer">
+          <CardImage>
+            <img src={props.link} />
+          </CardImage>
+        </a>
         <CardTitle>{props.name}</CardTitle>
       </CardHeader>
       <CardContent>{props.content}</CardContent>

@@ -5,7 +5,12 @@ import tw from "twin.macro";
 const Content = styled.div`
   ${tw`
     w-full 
-    flex flex-col flex-grow justify-center items-center
+    flex 
+    flex-col 
+    flex-grow 
+
+    justify-center
+    items-center
 `};
 `;
 
@@ -13,7 +18,9 @@ const Heading = styled.div`
   ${tw`
   text-7xl
   font-light
-    flex   justify-center items-center
+  flex   
+  justify-center 
+  items-center
 `};
 `;
 

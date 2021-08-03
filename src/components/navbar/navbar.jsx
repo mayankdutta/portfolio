@@ -4,7 +4,15 @@ import { Navbar, Logo } from "../../components/styledComponents/index.jsx";
 const App = () => {
   return (
     <Navbar>
-      <Logo>Resume</Logo>
+      <Logo>
+        <a
+          href="https://drive.google.com/file/d/1_b35Ua341UJNENOmgVIpJ7zL-Qb5EAst/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume
+        </a>
+      </Logo>
       {/*
       <NavComponents>
 
