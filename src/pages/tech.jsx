@@ -23,7 +23,7 @@ const App = () => {
       <Heading>
         <SerialNo>2.</SerialNo>Tech, I am familiar with
       </Heading>
-      <HiddenHeading>Tech Stack</HiddenHeading>
+      <HiddenHeading>TechStack</HiddenHeading>
       <Icons>
         <Cpp />
         <ReactJs />

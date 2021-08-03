@@ -5,12 +5,13 @@ import tw from "twin.macro";
 const Content = styled.div`
   ${tw`
     w-full 
+
     flex 
     flex-col 
-    flex-grow 
 
     justify-center
     items-center
+
 `};
 `;
 

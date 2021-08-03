@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>1. </SerialNo> A little about me.
+        <SerialNo>1. </SerialNo> Few words about me.
       </Heading>
       <HiddenHeading> about </HiddenHeading>
       <Content>

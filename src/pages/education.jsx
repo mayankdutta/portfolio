@@ -24,10 +24,10 @@ const App = () => {
           <SubHiddenHeading>
             Little Flowers public sr. sec. school
           </SubHiddenHeading>
-          <div className="tracking-wider text-sm font-medium">
+          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
             Class 10th: 10CGPA
           </div>
-          <div className="tracking-wider text-sm font-medium">
+          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
             Class 12th: 88.8%
           </div>
         </SubContent>

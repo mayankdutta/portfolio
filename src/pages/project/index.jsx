@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>4. </SerialNo> Spend most of the time with.
+        <SerialNo>4. </SerialNo> Love to spend time with
       </Heading>
       <HiddenHeading> Projects </HiddenHeading>
       <Content>

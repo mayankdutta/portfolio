@@ -72,8 +72,8 @@ export const NavComponents = styled.li`
 
 export const Heading = styled.div`
   ${tw`
-  text-xl
-  md:text-2xl
+  text-3xl
+  md:text-6xl
   lg:text-7xl
 
   font-light
@@ -82,8 +82,8 @@ export const Heading = styled.div`
 
 export const SerialNo = styled.span`
   ${tw`
-  text-xl
-  md:text-3xl
+  text-3xl
+  md:text-6xl
   lg:text-9xl
   font-extrabold
 `};
@@ -94,22 +94,26 @@ export const HiddenHeading = styled.div`
   z-index: -1;
   color: #ebebeb;
   ${tw`
-  left-20
+  left-8
   bottom-4
-
-  md:left-40
-  md:bottom-20
-
-  lg:left-40
-  lg:bottom-20
-
-  text-xl
-  md:text-3xl
-  lg:text-9xl
-
+  text-3xl
   inline-flex
   tracking-widest
   font-extrabold
+
+  md:left-40
+  md:bottom-20
+  md:text-6xl
+  md:inline-flex
+  md:tracking-widest
+  md:font-extrabold
+
+  lg:left-40
+  lg:bottom-20
+  lg:text-9xl
+  lg:inline-flex
+  lg:tracking-widest
+  lg:font-extrabold
 `};
 `;
 
@@ -131,7 +135,7 @@ export const SubHeading = styled.div`
 
 export const SubHiddenHeading = styled.div`
   ${tw`
-  text-base
+  text-xl
   tracking-wide
   font-light
   text-gray-500
@@ -151,11 +155,11 @@ export const SubHiddenHeading = styled.div`
 
 export const MainHeading = styled.div`
   ${tw`
-  text-base
+  text-2xl
   tracking-wider
   font-light
 
-  md:text-xl
+  md:text-2xl
   md:tracking-wider
   md:font-light
 
@@ -167,9 +171,17 @@ export const MainHeading = styled.div`
 
 export const MinorHeading = styled.span`
   ${tw`
-  text-xl
+  text-sm
   tracking-wider
   font-bold
+
+  md:text-base
+  md:tracking-wider
+  md:font-bold
+
+  lg:text-xl
+  lg:tracking-wider
+  lg:font-bold
 `};
 `;
 
@@ -211,10 +223,20 @@ export const Icons = styled.ul`
 
 export const Icon = styled.li`
   ${tw`
-  text-4xl
+  text-2xl
   text-gray-400
   hover:text-blue-500
   list-none
+
+  md:text-3xl
+  md:text-gray-400
+  md:hover:text-blue-500
+  md:list-none
+
+  lg:text-4xl
+  lg:text-gray-400
+  lg:hover:text-blue-500
+  lg:list-none
 `}
 `;
 export const Pages = styled.div`

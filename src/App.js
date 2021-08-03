@@ -9,14 +9,41 @@ import Tools from "./pages/tools.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
 import { Pages } from "./components/styledComponents/index.jsx";
+import styled from "styled-components";
+import tw from "twin.macro";
+
+const CustomPages = styled.div`
+  min-height: 80vh;
+  ${tw`
+  w-screen
+  flex
+  justify-center
+  items-center
+
+  px-4
+  py-0
+  pt-2
+  my-1
+
+  md:px-12
+  md:py-2
+  md:pt-6
+  md:my-4
+
+  lg:px-32
+  lg:py-8
+  lg:pt-20
+  lg:my-8
+`};
+`;
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <Pages>
+      <CustomPages>
         <Welcome />
-      </Pages>
+      </CustomPages>
       <Pages>
         <AboutMe />
       </Pages>

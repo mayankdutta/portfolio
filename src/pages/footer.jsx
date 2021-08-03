@@ -5,6 +5,13 @@ import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 const Footer = styled.div`
   ${tw`
   py-4
+  mb-4
+
+  md:py-4
+  md:mb-4
+
+  lg:py-4
+  lg:mb-4
 
 `}
 `;
