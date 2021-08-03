@@ -7,22 +7,22 @@ const Card = styled.div`
   flex
   flex-nowrap
   mx-4
-border-4
-border-transparent
-space-x-2
-hover:shadow
-hover:bg-gray-50
+  border-4
+  border-transparent
+  space-x-2
+  hover:shadow
+  hover:bg-gray-50
 `}
 `;
 
 const CardHeader = styled.div`
   ${tw`
-flex
-flex-col
-p-2
-border-2
-border-gray-400
-h-full
+  flex
+  flex-col
+  p-2
+  border-2
+  border-gray-400
+  h-full
 `}
 `;
 
@@ -37,21 +37,47 @@ const CardImage = styled.div`
 
 const CardTitle = styled.div`
   ${tw`
-  text-xl
+  text-sm
   flex
-items-center
-justify-center
+  items-center
+  justify-center
+
+  md:text-base
+  md:flex
+  md:items-center
+  md:justify-center
+
+  lg:text-xl
+  lg:flex
+  lg:items-center
+  lg:justify-center
 `}
 `;
 const CardContent = styled.span`
   ${tw`
-  text-base
+  text-sm
   flex
   flex-wrap
   flex-shrink
   flex-grow
   items-center
   justify-center
+
+  md:text-base
+  md:flex
+  md:flex-wrap
+  md:flex-shrink
+  md:flex-grow
+  md:items-center
+  md:justify-center
+
+  lg:text-base
+  lg:flex
+  lg:flex-wrap
+  lg:flex-shrink
+  lg:flex-grow
+  lg:items-center
+  lg:justify-center
 `}
 `;
 

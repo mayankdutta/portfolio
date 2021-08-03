@@ -10,7 +10,7 @@ import {
 } from "../../components/styledComponents/index.jsx";
 
 const style =
-  "text-2xl tracking-wide font-medium  rounded-2xl p-4 border-4 border-gray-400";
+  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-gray-400";
 
 const App = () => {
   const [rendercp, setRendercp] = useState(true);

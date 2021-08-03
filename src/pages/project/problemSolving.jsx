@@ -7,9 +7,17 @@ import tw from "twin.macro";
 const SubContent = styled.div`
   min-width: 40vw;
   ${tw`
-grid
-grid-cols-2
-gap-y-8
+  grid
+  grid-cols-1
+  gap-y-4
+  
+  md:grid
+  md:grid-cols-1
+  md:gap-y-6
+  
+  lg:grid
+  lg:grid-cols-2
+  lg:gap-y-8
 `};
 `;
 const App = () => {

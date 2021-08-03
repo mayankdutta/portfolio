@@ -16,19 +16,38 @@ const Content = styled.div`
 
 const Heading = styled.div`
   ${tw`
-  text-7xl
+  text-xl
   font-light
   flex   
   justify-center 
   items-center
+
+  md:text-2xl
+  md:font-light
+  md:flex   
+  md:justify-center 
+  md:items-center
+
+  lg:text-7xl
+  lg:font-light
+  lg:flex   
+  lg:justify-center 
+  lg:items-center
 `};
 `;
 
 const SubHeading = styled.div`
-  width: 30rem;
   ${tw`
-  text-xl
+  text-xs
   font-extralight
+
+  md:text-base
+  md:font-extralight
+  md:w-96
+
+  lg:text-xl
+  lg:font-extralight
+  lg:w-96
 `};
 `;
 
