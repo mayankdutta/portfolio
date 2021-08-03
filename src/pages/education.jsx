@@ -13,7 +13,24 @@ const SubHeading = styled.div`
   ${tw`
   text-4xl
   tracking-wide
-  font-medium
+  font-light
+  text-gray-500
+`};
+`;
+
+const MainHeading = styled.div`
+  ${tw`
+  text-4xl
+  tracking-wider
+  font-light
+`};
+`;
+
+const MinorHeading = styled.span`
+  ${tw`
+  text-xl
+  tracking-wider
+  font-bold
 `};
 `;
 
@@ -27,18 +44,27 @@ const App = () => {
       <Content>
         <SubContent>
           <SubHeading> Little Flowers public sr. sec. school</SubHeading>
-          <div>Class 10th: 10CGPA</div>
-          <div>Class 12th: 88.8%</div>
+          <div className="tracking-wider text-sm font-medium">Class 10th: 10CGPA</div>
+          <div className = "tracking-wider text-sm font-medium">Class 12th: 88.8%</div>
         </SubContent>
       </Content>
       <Content>
         <SubContent>
-          <SubHeading> Faculty of Engineering Jamia Millia Islamia </SubHeading>
-          <div>
-            B.tech in Electrical Engineering(major) and computer science(minor)
+          <MinorHeading>Faculty of Engineering</MinorHeading>
+          <MainHeading>Jamia Millia Islamia</MainHeading>
+          <span className="tracking-wider font-bold">
+            B.tech in Electrical Engineering
+          </span>
+          <span className="italic tracking-widest">(major) </span>
+
+          <span className="tracking-wider font-bold">and computer science</span>
+
+          <span className="italic tracking-widest">(minor)</span>
+
+          <div className = "tracking-wider text-sm font-medium">Expected 2023</div>
+          <div className="tracking-wider text-sm font-medium">
+            GPA till now: 8.57
           </div>
-          <div>GPA till now: 8.57</div>
-          <div>Expected 2023</div>
         </SubContent>
       </Content>
     </>

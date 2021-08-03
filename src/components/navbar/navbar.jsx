@@ -8,7 +8,7 @@ const Navbar = styled.ul`
   py-4
   w-screen
   flex
-  sticky top-3
+  sticky top-4
   bg-gray-100
   bg-opacity-50
   shadow

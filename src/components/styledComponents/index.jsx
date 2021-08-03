@@ -42,6 +42,7 @@ export const Content = styled.div`
 flex 
 flex-col
 space-y-16
+my-8
 `}
 `;
 
@@ -72,7 +73,7 @@ export const Icon = styled.li`
 `;
 export const Pages = styled.div`
   border: solid 4px gold;
-  min-height: 100vh;
+  min-height: 80vh;
   ${tw`
   w-screen
   px-32

@@ -6,7 +6,8 @@ const Content = styled.div`
   ${tw`
   border-4
   border-red-500
-   h-screen w-full flex flex-col flex-grow justify-center items-center
+    w-full 
+    flex flex-col flex-grow justify-center items-center
 `};
 `;
 
@@ -14,7 +15,7 @@ const Heading = styled.div`
   ${tw`
   text-7xl
   font-light
-
+    flex   justify-center items-center
 `};
 `;
 
