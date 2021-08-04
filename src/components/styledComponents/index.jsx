@@ -1,18 +1,25 @@
 import styled from "styled-components";
 import tw from "twin.macro";
+import { THEME } from "../../colorscheme/index.jsx";
 
-const backgroundColor = "#aaaaaa";
-const navbarBackgroundColor = "#8c8c8c";
-const hiddenTextColor = "#8c8c8c";
+console.log(THEME.footerIconColor);
+console.log("over");
 
-const buttonColor = "gray-900"; /* Tailwind */
-const buttonHoverColor = "gray-900"; /* Tailwind */
+// const backgroundColor = "#aaaaaa";
+const backgroundColor = THEME.backgroundColor;
+const navbarBackgroundColor = THEME.navbarBackgroundColor;
+const hiddenTextColor = THEME.hiddenTextColor;
+
+const buttonColor = THEME.buttonColor;
+const buttonHoverColor = THEME.buttonHoverColor;
 
 const cardHeaderHoverColor = "gray-900"; /* Tailwind */
-const cardBorder = "#8c8c8c";
+const cardBorder = THEME.cardBorder;
 
 const footerIconColor = "gray-900"; /* Tailwind */
 const footerIconHoverColor = "blue-700"; /* Tailwind */
+
+console.log(footerIconColor);
 
 const buttonStyle =
   " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-gray-900";

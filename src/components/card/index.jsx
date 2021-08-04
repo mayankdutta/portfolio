@@ -9,11 +9,11 @@ import {
 
 const App = (props) => {
   return (
-    <Card className = "group">
+    <Card className="group">
       <a href={props.href} target="_blank" rel="noopener noreferrer">
         <CardHeader>
           <CardImage>
-            <img src={props.link} />
+            <img src={props.link} alt="image" />
           </CardImage>
           <CardTitle>{props.name}</CardTitle>
         </CardHeader>
