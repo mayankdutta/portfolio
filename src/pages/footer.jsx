@@ -1,42 +1,16 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
+import {
+  Footer,
+  FooterIcons,
+  FooterIcon,
+} from "../components/styledComponents/index.jsx";
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-const Footer = styled.div`
-  ${tw`
-  py-4
-  mb-4
 
-  md:py-4
-  md:mb-4
-
-  lg:py-4
-  lg:mb-4
-
-`}
-`;
-const Icons = styled.ul`
-  ${tw`
-flex
-space-x-4
-justify-center
-items-end
-`}
-`;
-
-const Icon = styled.li`
-  ${tw`
-  text-4xl
-  text-gray-900
-  hover:text-blue-700
-  list-none
-`}
-`;
 const App = () => {
   return (
     <Footer>
-      <Icons>
-        <Icon>
+      <FooterIcons>
+        <FooterIcon>
           <a
             href="mailto:smayankdutt@gmail.com"
             target="_blank"
@@ -44,8 +18,8 @@ const App = () => {
           >
             <AiOutlineMail />
           </a>
-        </Icon>
-        <Icon>
+        </FooterIcon>
+        <FooterIcon>
           <a
             href="https://github.com/mayankdutta"
             target="_blank"
@@ -53,8 +27,8 @@ const App = () => {
           >
             <AiFillGithub />
           </a>
-        </Icon>
-        <Icon>
+        </FooterIcon>
+        <FooterIcon>
           <a
             href="https://www.linkedin.com/in/mayank-dutta-5a5640157/"
             target="_blank"
@@ -62,13 +36,13 @@ const App = () => {
           >
             <AiFillLinkedin />
           </a>
-        </Icon>
-      </Icons>
-      <Icons>
+        </FooterIcon>
+      </FooterIcons>
+      <FooterIcons>
         <div className="font-sans italic font-light my-4">
-          crafted from sratch by mayank
+          crafted from scratch by mayank
         </div>
-      </Icons>
+      </FooterIcons>
     </Footer>
   );
 };

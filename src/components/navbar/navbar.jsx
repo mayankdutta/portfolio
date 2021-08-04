@@ -1,10 +1,13 @@
 import React from "react";
-import { Navbar, Logo } from "../../components/styledComponents/index.jsx";
+import {
+  Navbar,
+  NavbarLogo,
+} from "../../components/styledComponents/index.jsx";
 
 const App = () => {
   return (
     <Navbar>
-      <Logo>
+      <NavbarLogo>
         <a
           href="https://drive.google.com/file/d/1_b35Ua341UJNENOmgVIpJ7zL-Qb5EAst/view?usp=sharing"
           target="_blank"
@@ -12,7 +15,7 @@ const App = () => {
         >
           Resume
         </a>
-      </Logo>
+      </NavbarLogo>
       {/*
       <NavComponents>
 

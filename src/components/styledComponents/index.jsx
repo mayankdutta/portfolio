@@ -26,6 +26,55 @@ export const CustomPages = styled.div`
   lg:my-8
 `};
 `;
+export const CustomContent = styled.div`
+  ${tw`
+    w-full 
+
+    flex 
+    flex-col 
+
+    justify-center
+    items-center
+
+`};
+`;
+
+export const CustomHeading = styled.div`
+  ${tw`
+  text-xl
+  font-light
+  flex   
+  justify-center 
+  items-center
+
+  md:text-2xl
+  md:font-light
+  md:flex   
+  md:justify-center 
+  md:items-center
+
+  lg:text-7xl
+  lg:font-light
+  lg:flex   
+  lg:justify-center 
+  lg:items-center
+`};
+`;
+
+export const CustomSubHeading = styled.div`
+  ${tw`
+  text-xs
+  font-extralight
+
+  md:text-base
+  md:font-extralight
+  md:w-96
+
+  lg:text-xl
+  lg:font-extralight
+  lg:w-96
+`};
+`;
 
 export const Pages = styled.div`
   min-height: 80vh;
@@ -82,7 +131,7 @@ export const Navbar = styled.ul`
 `};
 `;
 
-export const Logo = styled.li`
+export const NavbarLogo = styled.li`
   ${tw`
   w-full
   mr-2
@@ -296,5 +345,139 @@ export const ButtonLarge = styled.div`
   flex-wrap
   justify-center
   space-x-4
+`};
+`;
+export const Footer = styled.div`
+  ${tw`
+  py-4
+  mb-4
+
+  md:py-4
+  md:mb-4
+
+  lg:py-4
+  lg:mb-4
+
+`}
+`;
+export const FooterIcons = styled.ul`
+  ${tw`
+flex
+space-x-4
+justify-center
+items-end
+`}
+`;
+
+export const FooterIcon = styled.li`
+  ${tw`
+  text-4xl
+  text-gray-900
+  hover:text-blue-700
+  list-none
+`}
+`;
+export const Card = styled.div`
+  border: 2px solid #8c8c8c;
+  ${tw`
+  flex
+  flex-nowrap
+  mx-4
+  space-x-2
+  hover:shadow-2xl
+  rounded-2xl
+`}
+`;
+
+export const CardHeader = styled.div`
+  border-right: 2px solid #8c8c8c;
+  ${tw`
+  flex
+  flex-col
+  p-2
+  h-full
+  hover:bg-indigo-900
+  hover:rounded-2xl
+  hover:text-white
+`}
+`;
+
+export const CardImage = styled.div`
+  ${tw`
+  h-24
+  w-24
+  rounded-full
+`}
+`;
+
+export const CardTitle = styled.div`
+  ${tw`
+  text-sm
+  flex
+  items-center
+  justify-center
+
+  md:text-base
+  md:flex
+  md:items-center
+  md:justify-center
+
+  lg:text-xl
+  lg:flex
+  lg:items-center
+  lg:justify-center
+`}
+`;
+export const CardContent = styled.span`
+  ${tw`
+  text-sm
+  flex
+  flex-wrap
+  flex-shrink
+  flex-grow
+  items-center
+  justify-center
+
+  md:text-base
+  md:flex
+  md:flex-wrap
+  md:flex-shrink
+  md:flex-grow
+  md:items-center
+  md:justify-center
+
+  lg:text-base
+  lg:flex
+  lg:flex-wrap
+  lg:flex-shrink
+  lg:flex-grow
+  lg:items-center
+  lg:justify-center
+`}
+`;
+export const Logo = styled.div`
+  ${tw`
+flex
+flex-wrap
+
+justify-center
+items-center
+
+space-x-4
+space-y-4
+
+p-4
+border-2
+border-transparent
+
+font-sans
+font-medium
+
+text-black
+
+hover:shadow-xl
+hover:text-black
+hover:font-bold
+hover:shadow
 `};
 `;

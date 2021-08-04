@@ -1,6 +1,5 @@
 import React from "react";
-import styled from "styled-components";
-import tw from "twin.macro";
+import { Logo } from "../styledComponents/index.jsx";
 
 import {
   SiCplusplus,
@@ -25,33 +24,6 @@ import {
 import { BsFillTerminalFill } from "react-icons/bs";
 import { DiJavascript1 } from "react-icons/di";
 import { FcTreeStructure } from "react-icons/fc";
-
-const Logo = styled.div`
-  ${tw`
-flex
-flex-wrap
-
-justify-center
-items-center
-
-space-x-4
-space-y-4
-
-p-4
-border-2
-border-transparent
-
-font-sans
-font-medium
-
-text-black
-
-hover:shadow-xl
-hover:text-black
-hover:font-bold
-hover:shadow
-`};
-`;
 
 export const Cpp = () => {
   return (
