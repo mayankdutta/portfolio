@@ -186,18 +186,6 @@ export const NavComponents = styled.li`
 `};
 `;
 
-export const Heading = styled.div`
-  position: relative;
-  z-index: 1;
-  ${tw`
-    text-3xl
-    md:text-6xl
-    lg:text-7xl
-
-    font-light
-`};
-`;
-
 export const SerialNo = styled.span`
   ${tw`
     text-3xl
@@ -236,22 +224,6 @@ export const HiddenHeading = styled.div`
 `};
 `;
 
-export const SubHeading = styled.div`
-  ${tw`
-    text-base
-    tracking-wide
-    font-medium
-
-    md:text-xl
-    md:tracking-wide
-    md:font-medium
-
-    lg:text-4xl
-    lg:tracking-wide
-    lg:font-medium
-`};
-`;
-
 export const SubHiddenHeading = styled.div`
   ${tw`
     text-xl
@@ -269,6 +241,34 @@ export const SubHiddenHeading = styled.div`
     lg:font-light
     lg:text-gray-500
 
+`};
+`;
+
+export const Heading = styled.div`
+  position: relative;
+  z-index: 1;
+  ${tw`
+    text-3xl
+    md:text-6xl
+    lg:text-7xl
+
+    font-light
+`};
+`;
+
+export const SubHeading = styled.div`
+  ${tw`
+    text-base
+    tracking-wide
+    font-medium
+
+    md:text-xl
+    md:tracking-wide
+    md:font-medium
+
+    lg:text-4xl
+    lg:tracking-wide
+    lg:font-medium
 `};
 `;
 
@@ -357,15 +357,6 @@ export const Icon = styled.li`
     lg:hover:text-blue-500
     lg:list-none
 `}
-`;
-export const ButtonLarge = styled.div`
-  cursor: pointer;
-  ${tw`
-    flex
-    flex-wrap
-    justify-center
-    space-x-4
-`};
 `;
 export const Footer = styled.div`
   ${tw`
@@ -475,6 +466,7 @@ export const CardContent = styled.span`
     lg:justify-center
 `}
 `;
+
 export const Logo = styled.div`
   ${tw`
     flex
@@ -499,5 +491,15 @@ export const Logo = styled.div`
     hover:text-black
     hover:font-bold
     hover:shadow
+`};
+`;
+
+export const ButtonLarge = styled.div`
+  cursor: pointer;
+  ${tw`
+    flex
+    flex-wrap
+    justify-center
+    space-x-4
 `};
 `;
