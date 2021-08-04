@@ -21,41 +21,15 @@ export const buttonHoverStyle =
 export const buttonChoosenStyle =
   buttonStyle + " bg-" + buttonColor + " text-white";
 
-export const CustomPages = styled.div`
-  min-height: 80vh;
-  min-width: 80vw;
-  background-color: ${backgroundColor};
-  ${tw`
-    flex
-    justify-center
-    items-center
-
-    px-4
-    py-0
-    pt-2
-    my-1
-
-    md:px-12
-    md:py-2
-    md:pt-6
-    md:my-4
-
-    lg:px-32
-    lg:py-8
-    lg:pt-20
-    lg:my-8
-`};
-`;
 export const CustomContent = styled.div`
   ${tw`
-    w-full 
-
     flex 
     flex-col 
 
+    w-full 
+
     justify-center
     items-center
-
 `};
 `;
 
@@ -83,6 +57,7 @@ export const CustomHeading = styled.div`
 
 export const CustomSubHeading = styled.div`
   ${tw`
+    text-center
     text-xs
     font-extralight
 
@@ -99,7 +74,7 @@ export const CustomSubHeading = styled.div`
 export const Pages = styled.div`
   min-height: 80vh;
   min-width: 80vw;
-  background-color: #aaaaaa;
+  background-color: ${backgroundColor};
   z-index: -2;
   ${tw`
 
@@ -340,24 +315,6 @@ export const Icons = styled.ul`
 `}
 `;
 
-export const Icon = styled.li`
-  ${tw`
-    text-2xl
-    text-gray-400
-    hover:text-blue-500
-    list-none
-
-    md:text-3xl
-    md:text-gray-400
-    md:hover:text-blue-500
-    md:list-none
-
-    lg:text-4xl
-    lg:text-gray-400
-    lg:hover:text-blue-500
-    lg:list-none
-`}
-`;
 export const Footer = styled.div`
   ${tw`
     py-4
@@ -406,6 +363,8 @@ export const CardHeader = styled.div`
   ${tw`
     flex
     flex-col
+    items-center
+    justify-center
     p-2
     h-full
     group-hover:bg-${cardHeaderHoverColor}

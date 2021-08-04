@@ -19,6 +19,7 @@ import {
   SiCodechef,
   SiHappycow,
   SiCodecademy,
+  SiPowershell,
 } from "react-icons/si";
 
 import { BsFillTerminalFill } from "react-icons/bs";
@@ -225,6 +226,16 @@ export const DS = () => {
         <FcTreeStructure />
       </span>
       Data Structure and algorithm
+    </Logo>
+  );
+};
+export const Shells = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-gray-700 mx-2"}>
+        <SiPowershell />
+      </span>
+      Shells<span className="italic font-light">(fish, zsh, bash)</span>
     </Logo>
   );
 };

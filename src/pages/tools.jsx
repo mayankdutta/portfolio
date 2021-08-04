@@ -12,6 +12,7 @@ import {
   Jetbrains,
   Sublime,
   Terminal,
+  Shells,
 } from "../components/logo/index.jsx";
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Jetbrains />
         <Terminal />
         <Vs />
+        <Shells />
       </Icons>
     </>
   );

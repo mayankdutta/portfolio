@@ -9,9 +9,9 @@ const App = () => {
   return (
     <CustomContent>
       <CustomHeading>Mayank Dutta</CustomHeading>
-      <CustomSubHeading>
-        Competitive Programmer, UI/UX designer. I use Vim btw
-      </CustomSubHeading>
+      <CustomSubHeading>Competitive Programmer.</CustomSubHeading>
+      <CustomSubHeading>UI/UX designer. I use Vim btw</CustomSubHeading>
+      <CustomSubHeading>Vim user</CustomSubHeading>
     </CustomContent>
   );
 };

@@ -8,15 +8,15 @@ import Projects from "./pages/project/index.jsx";
 import Tools from "./pages/tools.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
-import { Pages, CustomPages } from "./components/styledComponents/index.jsx";
+import { Pages } from "./components/styledComponents/index.jsx";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <CustomPages>
+      <Pages className="flex justify-center items-center">
         <Welcome />
-      </CustomPages>
+      </Pages>
       <Pages>
         <AboutMe />
       </Pages>
