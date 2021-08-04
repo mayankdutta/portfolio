@@ -24,6 +24,7 @@ import {
 
 import { BsFillTerminalFill } from "react-icons/bs";
 import { DiJavascript1 } from "react-icons/di";
+import { FcTreeStructure } from "react-icons/fc";
 
 const Logo = styled.div`
   ${tw`
@@ -228,7 +229,7 @@ export const CC = () => {
 export const USACO = () => {
   return (
     <Logo>
-      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+      <span className={"text-4xl list-none text-indigo-700 mx-2"}>
         <SiHappycow />
       </span>
       USACO
@@ -242,6 +243,16 @@ export const CA = () => {
         <SiCodecademy />
       </span>
       CA
+    </Logo>
+  );
+};
+export const DS = () => {
+  return (
+    <Logo>
+      <span className={"text-4xl list-none text-blue-500 mx-2"}>
+        <FcTreeStructure />
+      </span>
+      Data Structure and algorithm
     </Logo>
   );
 };

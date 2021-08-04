@@ -3,7 +3,7 @@ import Card from "../../components/card/index.jsx";
 import {} from "../../components/styledComponents/index.jsx";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { CF, CC, USACO, CA } from "../../components/logo/index.jsx";
+import { CF, CC, USACO } from "../../components/logo/index.jsx";
 
 const SubContent = styled.div`
   min-width: 40vw;
@@ -85,7 +85,7 @@ const App = () => {
               <h1>
                 - Problems are from various OJ like USACO, CF, CC, AC, UVA, CSES
                 <span className="flex flex-wrap">
-                  <CF /> <USACO /> <CC /> <CA />
+                  <CF /> <USACO /> <CC />
                 </span>
               </h1>
             </div>

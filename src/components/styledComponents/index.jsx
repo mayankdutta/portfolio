@@ -58,7 +58,7 @@ export const Navbar = styled.ul`
   w-screen
   flex
   sticky top-2
-  bg-opacity-50
+  bg-opacity-10
   rounded-xl
   shadow
 
@@ -67,7 +67,7 @@ export const Navbar = styled.ul`
   md:w-screen
   md:flex
   md:sticky top-4
-  md:bg-opacity-50
+  md:bg-opacity-10
   md:rounded-2xl
   md:shadow
 
@@ -76,7 +76,7 @@ export const Navbar = styled.ul`
   lg:w-screen
   lg:flex
   lg:sticky top-4
-  lg:bg-opacity-50
+  lg:bg-opacity-10
   lg:rounded-2xl
   lg:shadow
 `};
@@ -246,7 +246,7 @@ my-8
 
 export const SubContent = styled.div`
   min-width: 40vw;
-  max-width: 60vw;
+  /* max-width: 60vw; */
   ${tw`
 `};
 `;

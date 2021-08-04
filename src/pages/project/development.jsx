@@ -116,9 +116,9 @@ const App = () => {
                 would you like to see my
                 <a
                   href="https://github.com/mayankdutta/.config/"
-                  className="text-blue-700"
+                  className="ml-2 text-blue-700"
                 >
-                  Config
+                  config
                 </a>
                 <span className="flex">
                   <Neovim /> <Vim />

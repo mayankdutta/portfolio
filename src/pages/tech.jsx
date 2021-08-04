@@ -9,6 +9,7 @@ import {
   Vim,
   Bash,
   Js,
+  DS,
 } from "../components/logo/index.jsx";
 import {
   Heading,
@@ -23,7 +24,7 @@ const App = () => {
       <Heading>
         <SerialNo>2.</SerialNo>Tech, I am familiar with
       </Heading>
-      <HiddenHeading>TechStack</HiddenHeading>
+      <HiddenHeading>Skills</HiddenHeading>
       <Icons>
         <Cpp />
         <ReactJs />
@@ -33,6 +34,7 @@ const App = () => {
         <Tailwind />
         <Bash />
         <Bootstrap />
+        <DS />
         <Vim />
       </Icons>
     </>

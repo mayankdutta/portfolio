@@ -27,8 +27,8 @@ items-end
 const Icon = styled.li`
   ${tw`
   text-4xl
-  text-gray-400
-  hover:text-blue-500
+  text-gray-900
+  hover:text-blue-700
   list-none
 `}
 `;

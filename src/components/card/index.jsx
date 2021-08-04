@@ -21,6 +21,9 @@ const CardHeader = styled.div`
   flex-col
   p-2
   h-full
+  hover:bg-indigo-900
+  hover:rounded-2xl
+  hover:text-white
 `}
 `;
 
@@ -81,14 +84,14 @@ const CardContent = styled.span`
 const App = (props) => {
   return (
     <Card>
-      <CardHeader>
-        <a href={props.href} target="_blank" rel="noopener noreferrer">
+      <a href={props.href} target="_blank" rel="noopener noreferrer">
+        <CardHeader>
           <CardImage>
             <img src={props.link} />
           </CardImage>
-        </a>
-        <CardTitle>{props.name}</CardTitle>
-      </CardHeader>
+          <CardTitle>{props.name}</CardTitle>
+        </CardHeader>
+      </a>
       <CardContent>{props.content}</CardContent>
     </Card>
   );

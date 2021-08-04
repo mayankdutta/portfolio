@@ -10,12 +10,16 @@ import {
 } from "../../components/styledComponents/index.jsx";
 
 const style =
-  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-gray-400";
+  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-gray-900";
 
 const App = () => {
   const [rendercp, setRendercp] = useState(true);
-  const [currStyleCp, setCurrStyleCp] = useState(style + " bg-gray-400 ");
-  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(style);
+  const [currStyleCp, setCurrStyleCp] = useState(
+    style + " bg-gray-900 text-white"
+  );
+  const [currStyleDevelopment, setCurrStyleDevelopment] = useState(
+    style + " hover:bg-indigo-900 hover:text-white"
+  );
   return (
     <>
       <Heading>
@@ -28,8 +32,10 @@ const App = () => {
             className={currStyleCp}
             onClick={() => {
               setRendercp(true);
-              setCurrStyleCp(style + "  bg-gray-600 text-gray-800");
-              setCurrStyleDevelopment(style);
+              setCurrStyleCp(style + "  bg-gray-900  text-white");
+              setCurrStyleDevelopment(
+                style + " hover:bg-indigo-900 hover:text-white"
+              );
             }}
           >
             Problem Solving
@@ -38,8 +44,8 @@ const App = () => {
             className={currStyleDevelopment}
             onClick={() => {
               setRendercp(false);
-              setCurrStyleCp(style);
-              setCurrStyleDevelopment(style + "  bg-gray-600 text-gray-800");
+              setCurrStyleCp(style + " hover:bg-indigo-900 hover:text-white");
+              setCurrStyleDevelopment(style + "  bg-gray-900  text-white");
             }}
           >
             Development
