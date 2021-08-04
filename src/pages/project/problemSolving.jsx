@@ -21,6 +21,8 @@ const SubContent = styled.div`
   lg:gap-y-8
 `};
 `;
+// const CustomBorder = { borderBottom: "2px solid #8c8c8c" };
+
 const App = () => {
   return (
     <>

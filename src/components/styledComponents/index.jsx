@@ -6,9 +6,9 @@ const navbarBackgroundColor = "#8c8c8c";
 const hiddenTextColor = "#8c8c8c";
 
 const buttonColor = "gray-900"; /* Tailwind */
-const buttonHoverColor = "indigo-900"; /* Tailwind */
+const buttonHoverColor = "gray-900"; /* Tailwind */
 
-const cardHeaderHoverColor = "indigo-900"; /* Tailwind */
+const cardHeaderHoverColor = "gray-900"; /* Tailwind */
 const cardBorder = "#8c8c8c";
 
 const footerIconColor = "gray-900"; /* Tailwind */
@@ -23,9 +23,9 @@ export const buttonChoosenStyle =
 
 export const CustomPages = styled.div`
   min-height: 80vh;
+  min-width: 80vw;
   background-color: ${backgroundColor};
   ${tw`
-    w-screen
     flex
     justify-center
     items-center
@@ -98,10 +98,10 @@ export const CustomSubHeading = styled.div`
 
 export const Pages = styled.div`
   min-height: 80vh;
+  min-width: 80vw;
   background-color: #aaaaaa;
   z-index: -2;
   ${tw`
-    w-screen
 
     px-4
     py-0
@@ -121,10 +121,12 @@ export const Pages = styled.div`
 `;
 export const Navbar = styled.ul`
   background-color: ${navbarBackgroundColor};
+  max-width: 100vw;
   ${tw`
     my-4
+    mx-4
     py-2
-    w-screen
+    px-2
     flex
     sticky top-2
     bg-opacity-10
@@ -132,8 +134,9 @@ export const Navbar = styled.ul`
     shadow
 
     md:my-4
+    md:mx-4
     md:py-4
-    md:w-screen
+    md:px-4
     md:flex
     md:sticky top-4
     md:bg-opacity-10
@@ -141,8 +144,9 @@ export const Navbar = styled.ul`
     md:shadow
 
     lg:my-4
+    lg:mx-4
     lg:py-4
-    lg:w-screen
+    lg:px-8
     lg:flex
     lg:sticky top-4
     lg:bg-opacity-10
@@ -154,21 +158,20 @@ export const Navbar = styled.ul`
 export const NavbarLogo = styled.li`
   ${tw`
     w-full
-    mr-2
+    h-full
+
     flex
     flex-row-reverse
     text-base
     font-medium
 
     md:w-full
-    md:mr-4
     md:flex
     md:flex-row-reverse
     md:text-xl
     md:font-medium
 
     lg:w-full
-    lg:mr-10
     lg:flex
     lg:flex-row-reverse
     lg:text-2xl
@@ -326,17 +329,14 @@ export const Icons = styled.ul`
     grid-cols-1
     gap-x-0
     gap-y-2
-    px-4
     
     md:grid-cols-2
     md:gap-x-0
     md:gap-y-2
-    md:px-8
     
     lg:grid-cols-3
     lg:gap-x-0
     lg:gap-y-4
-    lg:px-16
 `}
 `;
 
@@ -396,6 +396,7 @@ export const Card = styled.div`
     mx-4
     space-x-2
     hover:shadow-2xl
+    hover:border-transparent
     rounded-2xl
 `}
 `;
@@ -407,9 +408,9 @@ export const CardHeader = styled.div`
     flex-col
     p-2
     h-full
-    hover:bg-${cardHeaderHoverColor}
-    hover:rounded-2xl
-    hover:text-white
+    group-hover:bg-${cardHeaderHoverColor}
+    group-hover:rounded-2xl
+    group-hover:text-white
 `}
 `;
 
@@ -468,6 +469,7 @@ export const CardContent = styled.span`
 `;
 
 export const Logo = styled.div`
+  border: 2px solid ${cardBorder};
   ${tw`
     flex
     flex-wrap
@@ -475,12 +477,13 @@ export const Logo = styled.div`
     justify-center
     items-center
     
-    space-x-4
-    space-y-4
+    space-x-2
+    space-y-2
     
-    p-4
-    border-2
-    border-transparent
+    p-2
+    mx-4
+
+    rounded-2xl
     
     font-sans
     font-medium
@@ -491,6 +494,7 @@ export const Logo = styled.div`
     hover:text-black
     hover:font-bold
     hover:shadow
+    hover:border-transparent
 `};
 `;
 
