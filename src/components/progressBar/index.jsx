@@ -8,7 +8,8 @@ const App = (props) => {
         <div
           style={{}}
           className={
-            "overflow-hidden h-4 mb-4 text-xs flex border-4 border-black rounded "
+            "overflow-hidden h-4 mb-4 text-xs flex border-4 border-black rounded bg-" +
+            THEME.progressBar.background
           }
         >
           <div

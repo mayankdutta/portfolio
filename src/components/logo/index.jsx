@@ -28,7 +28,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { FcTreeStructure } from "react-icons/fc";
 
 const LogoClass =
-  "hover:bg-" +
+  " hover:bg-" +
   THEME.logo.hover.background +
   " hover:text-" +
   THEME.logo.hover.color;
@@ -242,7 +242,8 @@ export const Shells = () => {
       <span className={"text-4xl list-none text-gray-700 mx-2"}>
         <SiPowershell />
       </span>
-      Shells<span className="italic font-light">(fish, zsh, bash)</span>
+      Shells
+      <span className="italic font-light">(fish, zsh, bash)</span>
     </Logo>
   );
 };

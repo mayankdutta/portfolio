@@ -11,7 +11,8 @@ export const styleSmallTwoButton =
 const buttonStyle =
   " text-base md:text-xl lg:text-2xl font-medium tracking-wide rounded-2xl p-4 border-4 border-" +
   THEME.button.border +
-  " ";
+  " text-" +
+  THEME.button.text;
 
 export const buttonHoverStyle =
   buttonStyle + " hover:bg-" + THEME.button.hover.background + " hover:text";
@@ -40,13 +41,13 @@ export const CustomHeading = styled.div`
     justify-center 
     items-center
 
-    md:text-2xl
+    md:text-4xl
     md:font-light
     md:flex   
     md:justify-center 
     md:items-center
 
-    lg:text-7xl
+    lg:text-8xl
     lg:font-light
     lg:flex   
     lg:justify-center 
@@ -55,18 +56,18 @@ export const CustomHeading = styled.div`
 `;
 
 export const CustomSubHeading = styled.div`
-  color: ${THEME.text.normal};
+  color: ${THEME.text.subHeading};
   ${tw`
     text-center
     text-xs
-    font-extralight
+    font-medium
 
     md:text-base
-    md:font-extralight
+    md:font-medium
     md:w-96
 
     lg:text-xl
-    lg:font-extralight
+    lg:font-medium
     lg:w-96
 `};
 `;
@@ -99,6 +100,7 @@ export const Navbar = styled.ul`
   background-color: ${THEME.navbar.background};
   max-width: 100vw;
   position: sticky;
+  border: 2px solid ${THEME.navbar.border};
   z-index: 1;
   ${tw`
     py-2
@@ -202,21 +204,19 @@ export const HiddenHeading = styled.div`
 `;
 
 export const SubHiddenHeading = styled.div`
+  color: ${THEME.text.subHeading};
   ${tw`
     text-xl
     tracking-wide
-    font-light
-    text-gray-500
+    font-medium
 
     md:text-xl
     md:tracking-wide
-    md:font-light
-    md:text-gray-500
+    md:font-medium
 
     lg:text-4xl
     lg:tracking-wide
-    lg:font-light
-    lg:text-gray-500
+    lg:font-medium
 
 `};
 `;
@@ -235,6 +235,7 @@ export const Heading = styled.div`
 `;
 
 export const SubHeading = styled.div`
+  color: ${THEME.text.subHeading};
   ${tw`
     text-base
     tracking-wide
@@ -251,22 +252,24 @@ export const SubHeading = styled.div`
 `;
 
 export const MainHeading = styled.div`
+  color: ${THEME.text.subHeading};
   ${tw`
     text-2xl
     tracking-wider
-    font-light
+    font-medium
 
     md:text-2xl
     md:tracking-wider
-    md:font-light
+    md:font-medium
 
     lg:text-4xl
     lg:tracking-wider
-    lg:font-light
+    lg:font-medium
 `};
 `;
 
 export const MinorHeading = styled.span`
+  color: ${THEME.text.subHeading};
   ${tw`
     text-sm
     tracking-wider
@@ -283,12 +286,13 @@ export const MinorHeading = styled.span`
 `;
 
 export const Content = styled.div`
+  color: ${THEME.text.normal};
   ${tw`
     flex 
     flex-col
     space-y-16
     my-8
-`}
+`};
 `;
 
 export const SubContent = styled.div`
@@ -412,6 +416,8 @@ export const CardTitle = styled.div`
 `;
 export const CardContent = styled.span`
   ${tw`
+  border-4
+  border-green-400
     py-2
     px-2
     text-sm

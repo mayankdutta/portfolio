@@ -5,7 +5,9 @@ const DraculaColor = {
   nav: "#282A36",
   text: "#f8f8f2",
   mainHeadingText: "#F678C5",
+  serial: "#5AE87C",
   buttons: "#5AE87C",
+  buttonsTextColor: "#000000",
 };
 
 const DefaultColor = {
@@ -131,10 +133,10 @@ export const THEME = {
   },
   navbar: {
     background: DraculaColor.nav,
-    border: "",
+    border: DraculaColor.mainHeadingText,
     logo: {
       background: DraculaColor.subBody,
-      color: DraculaColor.body,
+      color: DraculaColor.buttons,
       border: "",
     },
   },
@@ -147,11 +149,12 @@ export const THEME = {
 
   text: {
     normal: DraculaColor.text,
+    subHeading: DraculaColor.buttons,
     heading: {
       color: DraculaColor.mainHeadingText,
       background: "",
     },
-    serial: DraculaColor.nav,
+    serial: DraculaColor.mainHeadingText,
     hidden: {
       color: DraculaColor.body,
       background: "",
@@ -159,10 +162,11 @@ export const THEME = {
   },
 
   button: {
-    background: "customColors-dracula-nav",
-    border: "customColors-dracula-nav",
+    background: "customColors-dracula-buttons",
+    color: "customColors-dracula-buttonsTextColor",
+    border: "customColors-dracula-buttons",
+    text: "customColors-dracula-hiddenHeading",
     hover: {
-      // background: "customColors-one-nav",
       background: "",
       border: "",
     },
@@ -171,7 +175,7 @@ export const THEME = {
   card: {
     overall: {
       background: "",
-      border: DraculaColor.nav,
+      border: DraculaColor.mainHeadingText,
       hover: {
         background: "" /* tailwind.config.js */,
         border: "",
@@ -179,9 +183,10 @@ export const THEME = {
     },
     head: {
       background: "",
-      border: "customColors-dracula-nav",
+      border: "customColors-dracula-buttons",
       hover: {
-        background: "customColors-dracula-text" /* tailwind.config.js */,
+        background:
+          "customColors-dracula-mainHeadingText" /* tailwind.config.js */,
         border: "",
       },
     },
@@ -189,8 +194,9 @@ export const THEME = {
       background: "",
       border: "" /* tailwind.config.js*/,
       hover: {
-        background: "",
+        background: "customColors-dracula-body",
         border: "customColors-dracula-text",
+        color: "customColors-dracula-mainHeadingText",
       },
     },
   },
@@ -198,7 +204,7 @@ export const THEME = {
   footer: {
     icon: {
       background: "",
-      color: "customColors-dracula-nav",
+      color: "customColors-dracula-mainHeadingText",
       hover: {
         color: "customColors-dracula-text" /* tailwind.config.js */,
       },
@@ -206,20 +212,20 @@ export const THEME = {
   },
 
   progressBar: {
-    background: DraculaColor.nav,
+    background: "customColors-dracula-nav",
     border: "",
     bar: {
-      background: "customColors-dracula-text",
+      background: "customColors-dracula-mainHeadingText",
       border: "",
     },
   },
 
   logo: {
-    color: "",
+    color: "customColors-dracula-text" /* Not working */,
     background: "",
     hover: {
       background: "customColors-dracula-nav",
-      color: "customColors-dracula-subBody",
+      color: "customColors-dracula-mainHeadingText",
     },
   },
 };

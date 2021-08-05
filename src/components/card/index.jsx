@@ -31,7 +31,16 @@ const App = (props) => {
           <CardTitle>{props.name}</CardTitle>
         </CardHeader>
       </a>
-      <CardContent>{props.content}</CardContent>
+      <CardContent
+        className={
+          "group-hover:bg-" +
+          THEME.card.body.hover.background +
+          " group-hover:text-" +
+          THEME.card.body.hover.color
+        }
+      >
+        {props.content}
+      </CardContent>
     </Card>
   );
 };
