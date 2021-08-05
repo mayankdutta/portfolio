@@ -1,28 +1,14 @@
-// https://colorhunt.co/palette/00b8a9f8f3d4f6416cffde7d
-
-export const THEME2 = {
-  mainBackgroundColor: "#000000",
-  backgroundColor: "#aaaaaa",
-  navbarBackgroundColor: "#8c8c8c",
-  hiddenTextColor: "#8c8c8c",
-  buttonColor: "gray-900",
-  buttonHoverColor: "gray-900",
-  cardHeaderHoverColor: "gray-900",
-  cardBorder: "#8c8c8c",
-  footerIconColor: "gray-900",
-  footerIconHoverColor: "blue-700",
-};
-
 const Color = {
-  blue: "#00B8A9",
-  lightYellow: "#F8F3D4",
-  darkYellow: "#FFDE7D",
-  reddish: "#F6416C",
+  // https://colorhunt.co/palette/00b8a9f8f3d4f6416cffde7d
+  subBody: "#F8F3D4" /* light yellow */,
+  body: "#FFDE7D" /* dark yellow */,
+  text: "#00B8A9" /* blue */,
+  nav: "#F6416C" /* reddish */,
 };
 
 export const THEME = {
   body: {
-    background: Color.darkYellow,
+    background: Color.body,
     border: "",
     logo: {
       background: "",
@@ -30,17 +16,17 @@ export const THEME = {
     },
   },
   navbar: {
-    background: Color.reddish,
+    background: Color.nav,
     border: "",
     logo: {
-      background: Color.lightYellow,
-      color: Color.lightYellow,
+      background: Color.subBody,
+      color: Color.subBody,
       border: "",
     },
   },
 
   page: {
-    background: Color.lightYellow,
+    background: Color.subBody,
     logo: "",
     border: "",
   },
@@ -48,21 +34,21 @@ export const THEME = {
   text: {
     main: "",
     heading: {
-      color: Color.blue,
+      color: Color.text,
       background: "",
     },
-    serial: Color.reddish,
+    serial: Color.nav,
     hidden: {
-      color: Color.darkYellow,
+      color: Color.body,
       background: "",
     },
   },
 
   button: {
-    background: "customColors-one-400",
-    border: "customColors-one-400",
+    background: "customColors-one-nav",
+    border: "customColors-one-nav",
     hover: {
-      background: "customColors-one-200",
+      background: "customColors-one-body",
       border: "",
     },
   },
@@ -70,7 +56,7 @@ export const THEME = {
   card: {
     overall: {
       background: "",
-      border: Color.reddish,
+      border: Color.nav,
       hover: {
         background: "" /* tailwind.config.js */,
         border: "",
@@ -80,7 +66,7 @@ export const THEME = {
       background: "",
       border: "",
       hover: {
-        background: "customColors-one-300" /* tailwind.config.js */,
+        background: "customColors-one-text" /* tailwind.config.js */,
         border: "",
       },
     },
@@ -89,7 +75,7 @@ export const THEME = {
       border: "" /* tailwind.config.js*/,
       hover: {
         background: "",
-        border: "customColors-one-300",
+        border: "customColors-one-text",
       },
     },
   },
@@ -97,18 +83,18 @@ export const THEME = {
   footer: {
     icon: {
       background: "",
-      color: "customColors-one-400",
+      color: "customColors-one-nav",
       hover: {
-        color: "customColors-one-300" /* tailwind.config.js */,
+        color: "customColors-one-text" /* tailwind.config.js */,
       },
     },
   },
 
   progressBar: {
-    background: Color.reddish,
+    background: Color.nav,
     border: "",
     bar: {
-      background: Color.blue,
+      background: Color.text,
       border: "",
     },
   },
@@ -117,8 +103,8 @@ export const THEME = {
     color: "",
     background: "",
     hover: {
-      background: "customColors-one-400",
-      color: "customColors-one-100",
+      background: "customColors-one-nav",
+      color: "customColors-one-subBody",
     },
   },
 };
