@@ -2,6 +2,12 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { THEME } from "../../colorscheme/index.jsx";
 
+export const styleProjectMiniIcons =
+  "flex flex-wrap gap-y-2 gap-x-2 mt-2 items-center justify-center";
+
+export const styleSmallTwoButton =
+  "flex justify-center items-center flew-wrap w-full md:w-auto lg:w-auto ";
+
 const buttonStyle =
   " text-base md:text-xl lg:text-2xl font-medium tracking-wide rounded-2xl p-4 border-4 border-" +
   THEME.button.border +
@@ -72,19 +78,19 @@ export const Pages = styled.div`
     py-4
     pt-2
     my-4
-    mx-2
+    mx-8
 
     md:px-12
     md:py-4
     md:pt-6
     md:my-4
-    md:mx-4
+    md:mx-16
 
     lg:px-32
     lg:py-8
     lg:pt-20
     lg:my-8
-    lg:mx-8
+    lg:mx-32
 `};
 `;
 export const Navbar = styled.ul`
@@ -127,13 +133,13 @@ export const NavbarLogo = styled.li`
 
     flex
     flex-row-reverse
-    text-base
+    text-xl
     font-medium
 
     md:w-full
     md:flex
     md:flex-row-reverse
-    md:text-xl
+    md:text-2xl
     md:font-medium
 
     lg:w-full
@@ -339,23 +345,38 @@ export const Card = styled.div`
   border: 2px solid ${THEME.card.overall.border};
   ${tw`
     flex
-    flex-nowrap
-    mx-4
-    space-x-2
-    hover:shadow-2xl
+    flex-wrap
+
+    justify-center
+    items-center
+
     rounded-2xl
+
+    md:flex-nowrap
+    md:mx-4
+    md:space-x-2
+    md:hover:shadow-2xl
+
+    lg:flex-nowrap
+    lg:mx-4
+    lg:space-x-2
+    lg:hover:shadow-2xl
 `}
 `;
 
 export const CardHeader = styled.div`
-  border-right: 2px solid ${THEME.card.overall.border};
   ${tw`
     flex
     flex-col
+
     items-center
     justify-center
+
     p-2
+
     h-full
+    w-full
+
     group-hover:rounded-2xl
     group-hover:text-white
 `}

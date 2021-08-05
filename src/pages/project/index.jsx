@@ -9,6 +9,7 @@ import {
   ButtonLarge,
   buttonHoverStyle,
   buttonChoosenStyle,
+  styleSmallTwoButton,
 } from "../../components/styledComponents/index.jsx";
 
 const App = () => {
@@ -25,10 +26,7 @@ const App = () => {
       <Content>
         <ButtonLarge>
           <div
-            className={
-              "flex justify-center items-center flew-wrap w-full md:w-auto lg:w-auto " +
-              currStyleCp
-            }
+            className={styleSmallTwoButton + " " + currStyleCp}
             onClick={() => {
               setRendercp(true);
               setCurrStyleCp(buttonChoosenStyle);
@@ -38,10 +36,7 @@ const App = () => {
             Problem Solving
           </div>
           <div
-            className={
-              "flex justify-center items-center flew-wrap w-full md:w-auto lg:w-auto " +
-              currStyleDevelopment
-            }
+            className={styleSmallTwoButton + " " + currStyleDevelopment}
             onClick={() => {
               setRendercp(false);
               setCurrStyleCp(buttonHoverStyle);

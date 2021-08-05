@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div
       style={{ backgroundColor: THEME.body.background }}
-      className="px-8 h-full py-2"
+      className="px-4 h-full py-2"
     >
       <Navbar />
       <Pages className="flex justify-center items-center">

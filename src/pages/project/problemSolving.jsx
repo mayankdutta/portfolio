@@ -4,6 +4,7 @@ import {} from "../../components/styledComponents/index.jsx";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { CF, CC, USACO } from "../../components/logo/index.jsx";
+import { styleProjectMiniIcons } from "../../components/styledComponents/index.jsx";
 
 const SubContent = styled.div`
   min-width: 40vw;
@@ -86,8 +87,9 @@ const App = () => {
               <h1>- Will be turning this to a blog, soon</h1>
               <h1>
                 - Problems are from various OJ like USACO, CF, CC, AC, UVA, CSES
-                <span className="flex flex-wrap">
-                  <CF /> <USACO /> <CC />
+                <span className={styleProjectMiniIcons}>
+                  <CF /> <CC />
+                  <USACO />
                 </span>
               </h1>
             </div>

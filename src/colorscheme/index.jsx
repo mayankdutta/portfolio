@@ -65,7 +65,7 @@ export const THEME = {
     },
     head: {
       background: "",
-      border: "",
+      border: "customColors-one-nav",
       hover: {
         background: "customColors-one-text" /* tailwind.config.js */,
         border: "",
