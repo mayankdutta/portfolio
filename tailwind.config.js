@@ -18,9 +18,26 @@ const colors = {
     },
   },
 };
-
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: {
+    content: ["./src/**/*.html"],
+    safelist: [
+      "bg-customColors-text",
+      "bg-customColors-subBody",
+      "bg-customColors-body",
+      "bg-customColors-nav",
+
+      "text-customColors-text",
+      "text-customColors-subBody",
+      "text-customColors-body",
+      "text-customColors-nav",
+
+      "border-customColors-text",
+      "border-customColors-subBody",
+      "border-customColors-body",
+      "border-customColors-nav",
+    ],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     colors: colors,
