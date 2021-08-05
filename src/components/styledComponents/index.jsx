@@ -8,23 +8,35 @@ console.log("over");
 // const backgroundColor = "#aaaaaa";
 const backgroundColor = THEME.backgroundColor;
 const navbarBackgroundColor = THEME.navbarBackgroundColor;
+const navbarLogoColor = THEME.navbarLogoColor;
+
 const hiddenTextColor = THEME.hiddenTextColor;
+const headingColor = THEME.headingColor;
+const serialColor = THEME.serialColor;
 
 const buttonColor = THEME.buttonColor;
 const buttonHoverColor = THEME.buttonHoverColor;
+const buttonBorder = THEME.buttonBorder;
 
-const cardHeaderHoverColor = "gray-900"; /* Tailwind */
+// const cardHeaderHoverColor = "gray-900"; /* Tailwind */
+const cardHeaderHoverColor = "customColors-one-300"; /* Tailwind */
 const cardBorder = THEME.cardBorder;
+const cardHoverBodyBorder = "customColors-one-300";
 
-const footerIconColor = "gray-900"; /* Tailwind */
-const footerIconHoverColor = "blue-700"; /* Tailwind */
+const footerIconColor = "customColors-one-400"; /* Tailwind */
+const footerIconHoverColor = "customColors-one-300"; /* Tailwind */
 
-console.log(footerIconColor);
+const logoHover = "customColors-one-400";
+const logoTextOnHover = "customColors-one-100";
 
 const buttonStyle =
-  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-gray-900";
+  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-" +
+  buttonBorder +
+  " ";
+
 export const buttonHoverStyle =
-  buttonStyle + " hover:bg-" + buttonHoverColor + " hover:text-white";
+  buttonStyle + " hover:bg-" + buttonHoverColor + " hover:text";
+
 export const buttonChoosenStyle =
   buttonStyle + " bg-" + buttonColor + " text-white";
 
@@ -82,9 +94,8 @@ export const Pages = styled.div`
   min-height: 80vh;
   min-width: 80vw;
   background-color: ${backgroundColor};
-  z-index: -2;
   ${tw`
-
+    rounded-2xl
     px-4
     py-0
     pt-2
@@ -104,33 +115,29 @@ export const Pages = styled.div`
 export const Navbar = styled.ul`
   background-color: ${navbarBackgroundColor};
   max-width: 100vw;
+  position: sticky;
+  z-index: 1;
   ${tw`
-    my-4
-    mx-4
     py-2
     px-2
     flex
-    sticky top-2
+    top-2
     bg-opacity-10
     rounded-xl
     shadow
 
-    md:my-4
-    md:mx-4
     md:py-4
     md:px-4
     md:flex
-    md:sticky top-4
+    md:top-4
     md:bg-opacity-10
     md:rounded-2xl
     md:shadow
 
-    lg:my-4
-    lg:mx-4
     lg:py-4
     lg:px-8
     lg:flex
-    lg:sticky top-4
+    lg:top-4
     lg:bg-opacity-10
     lg:rounded-2xl
     lg:shadow
@@ -138,6 +145,7 @@ export const Navbar = styled.ul`
 `;
 
 export const NavbarLogo = styled.li`
+  color: ${navbarLogoColor};
   ${tw`
     w-full
     h-full
@@ -172,6 +180,7 @@ export const NavComponents = styled.li`
 `;
 
 export const SerialNo = styled.span`
+  color: ${serialColor};
   ${tw`
     text-3xl
     md:text-6xl
@@ -231,7 +240,8 @@ export const SubHiddenHeading = styled.div`
 
 export const Heading = styled.div`
   position: relative;
-  z-index: 1;
+  z-index: 2;
+  color: ${headingColor};
   ${tw`
     text-3xl
     md:text-6xl
@@ -360,7 +370,7 @@ export const Card = styled.div`
     mx-4
     space-x-2
     hover:shadow-2xl
-    hover:border-transparent
+    hover:border-${cardHoverBodyBorder}
     rounded-2xl
 `}
 `;
@@ -457,8 +467,8 @@ export const Logo = styled.div`
     text-black
     
     hover:shadow-xl
-    hover:text-black
-    hover:font-bold
+    hover:text-${logoTextOnHover}
+    hover:bg-${logoHover}
     hover:shadow
     hover:border-transparent
 `};

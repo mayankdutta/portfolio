@@ -9,10 +9,14 @@ import Tools from "./pages/tools.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
 import { Pages } from "./components/styledComponents/index.jsx";
+import { THEME } from "./colorscheme/index.jsx";
 
 const App = () => {
   return (
-    <>
+    <div
+      style={{ backgroundColor: THEME.mainBackgroundColor }}
+      className="px-8 h-full"
+    >
       <Navbar />
       <Pages className="flex justify-center items-center">
         <Welcome />
@@ -36,7 +40,7 @@ const App = () => {
         <Contact />
       </Pages>
       <Footer />
-    </>
+    </div>
   );
 };
 
