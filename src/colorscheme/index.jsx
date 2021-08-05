@@ -20,7 +20,7 @@ export const THEME = {
     border: "",
     logo: {
       background: Color.subBody,
-      color: Color.subBody,
+      color: Color.body,
       border: "",
     },
   },
@@ -48,7 +48,8 @@ export const THEME = {
     background: "customColors-one-nav",
     border: "customColors-one-nav",
     hover: {
-      background: "customColors-one-body",
+      // background: "customColors-one-nav",
+      background: "",
       border: "",
     },
   },
@@ -94,7 +95,7 @@ export const THEME = {
     background: Color.nav,
     border: "",
     bar: {
-      background: Color.text,
+      background: "customColors-one-text",
       border: "",
     },
   },

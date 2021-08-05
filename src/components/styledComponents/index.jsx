@@ -73,16 +73,19 @@ export const Pages = styled.div`
     py-0
     pt-2
     my-1
+    mx-8
 
     md:px-12
     md:py-2
     md:pt-6
     md:my-4
+    md:mx-8
 
     lg:px-32
     lg:py-8
     lg:pt-20
     lg:my-8
+    lg:mx-8
 `};
 `;
 export const Navbar = styled.ul`

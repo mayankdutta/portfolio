@@ -7,13 +7,18 @@ const App = (props) => {
         {props.language}
         <div
           style={{}}
-          className="overflow-hidden h-4 mb-4 text-xs flex border-4 border-black rounded "
+          className={
+            "overflow-hidden h-4 mb-4 text-xs flex border-4 border-black rounded "
+          }
         >
           <div
             style={{
               width: props.width,
             }}
-            className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-customColors-one-300"
+            className={
+              "shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-" +
+              THEME.progressBar.bar.background
+            }
           ></div>
         </div>
       </div>
