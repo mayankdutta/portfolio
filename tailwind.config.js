@@ -15,6 +15,14 @@ const colors = {
         body: "#FFDE7D",
         nav: "#F6416C",
       },
+      dracula: {
+        subBody: "#383A59",
+        body: "#282A36",
+        nav: "#282A36",
+        mainHeadingText: "#F678C5",
+        text: "#FFFFFF",
+        buttons: "#5AE87C",
+      },
     },
   },
 };

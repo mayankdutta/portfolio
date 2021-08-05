@@ -32,6 +32,7 @@ export const CustomContent = styled.div`
 `;
 
 export const CustomHeading = styled.div`
+  color: ${THEME.text.heading.color};
   ${tw`
     text-xl
     font-light
@@ -54,6 +55,7 @@ export const CustomHeading = styled.div`
 `;
 
 export const CustomSubHeading = styled.div`
+  color: ${THEME.text.normal};
   ${tw`
     text-center
     text-xs
