@@ -5,12 +5,20 @@ import {
   FooterIcon,
 } from "../components/styledComponents/index.jsx";
 import { AiOutlineMail, AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { THEME } from "../colorscheme/index.jsx";
 
 const App = () => {
   return (
     <Footer>
       <FooterIcons>
-        <FooterIcon>
+        <FooterIcon
+          className={
+            "text-" +
+            THEME.footer.icon.color +
+            " hover:text-" +
+            THEME.footer.icon.hover.color
+          }
+        >
           <a
             href="mailto:smayankdutt@gmail.com"
             target="_blank"
@@ -19,7 +27,14 @@ const App = () => {
             <AiOutlineMail />
           </a>
         </FooterIcon>
-        <FooterIcon>
+        <FooterIcon
+          className={
+            "text-" +
+            THEME.footer.icon.color +
+            " hover:text-" +
+            THEME.footer.icon.hover.color
+          }
+        >
           <a
             href="https://github.com/mayankdutta"
             target="_blank"
@@ -28,7 +43,14 @@ const App = () => {
             <AiFillGithub />
           </a>
         </FooterIcon>
-        <FooterIcon>
+        <FooterIcon
+          className={
+            "text-" +
+            THEME.footer.icon.color +
+            " hover:text-" +
+            THEME.footer.icon.hover.color
+          }
+        >
           <a
             href="https://www.linkedin.com/in/mayank-dutta-5a5640157/"
             target="_blank"

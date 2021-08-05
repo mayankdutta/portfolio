@@ -19,32 +19,106 @@ const Color = {
   darkYellow: "#FFDE7D",
   reddish: "#F6416C",
 };
+
 export const THEME = {
-  mainBackgroundColor: Color.darkYellow,
-  backgroundColor: Color.lightYellow,
+  body: {
+    background: Color.darkYellow,
+    border: "",
+    logo: {
+      background: "",
+      border: "",
+    },
+  },
+  navbar: {
+    background: Color.reddish,
+    border: "",
+    logo: {
+      background: Color.lightYellow,
+      color: Color.lightYellow,
+      border: "",
+    },
+  },
 
-  navbarBackgroundColor: Color.reddish,
-  navbarLogoColor: Color.lightYellow,
+  page: {
+    background: Color.lightYellow,
+    logo: "",
+    border: "",
+  },
 
-  hiddenTextColor: Color.darkYellow,
-  headingColor: Color.blue,
-  serialColor: Color.reddish,
+  text: {
+    main: "",
+    heading: {
+      color: Color.blue,
+      background: "",
+    },
+    serial: Color.reddish,
+    hidden: {
+      color: Color.darkYellow,
+      background: "",
+    },
+  },
 
-  // buttonColor: "gray-900" /* Tailwind area */,
-  // buttonHoverColor: "gray-900" /* Tailwind area */,
-  buttonColor: "customColors-one-400" /* Tailwind area */,
-  buttonHoverColor: "customColors-one-200" /* Tailwind area */,
-  buttonBorder: "customColors-one-400",
+  button: {
+    background: "customColors-one-400",
+    border: "customColors-one-400",
+    hover: {
+      background: "customColors-one-200",
+      border: "",
+    },
+  },
 
-  cardHeaderHoverColor:
-    "" /* Tailwind area declare at styleCompnents/index.jsx*/,
-  cardBorder: Color.reddish,
-  cardHoverBodyBorder:
-    "" /* Tailwind area declare at styleCompnents/index.jsx*/,
+  card: {
+    overall: {
+      background: "",
+      border: Color.reddish,
+      hover: {
+        background: "" /* tailwind.config.js */,
+        border: "",
+      },
+    },
+    head: {
+      background: "",
+      border: "",
+      hover: {
+        background: "customColors-one-300" /* tailwind.config.js */,
+        border: "",
+      },
+    },
+    body: {
+      background: "",
+      border: "" /* tailwind.config.js*/,
+      hover: {
+        background: "",
+        border: "customColors-one-300",
+      },
+    },
+  },
 
-  footerIconColor: "gray-900" /* Tailwind area */,
-  footerIconHoverColor: "blue-700" /* Tailwind area */,
+  footer: {
+    icon: {
+      background: "",
+      color: "customColors-one-400",
+      hover: {
+        color: "customColors-one-300" /* tailwind.config.js */,
+      },
+    },
+  },
 
-  progressBarBackgroundColor: Color.blue,
-  progressBarColor: Color.reddish,
+  progressBar: {
+    background: Color.reddish,
+    border: "",
+    bar: {
+      background: Color.blue,
+      border: "",
+    },
+  },
+
+  logo: {
+    color: "",
+    background: "",
+    hover: {
+      background: "customColors-one-400",
+      color: "customColors-one-100",
+    },
+  },
 };

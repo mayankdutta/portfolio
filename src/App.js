@@ -14,7 +14,7 @@ import { THEME } from "./colorscheme/index.jsx";
 const App = () => {
   return (
     <div
-      style={{ backgroundColor: THEME.mainBackgroundColor }}
+      style={{ backgroundColor: THEME.body.background }}
       className="px-8 h-full"
     >
       <Navbar />

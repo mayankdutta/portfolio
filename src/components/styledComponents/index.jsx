@@ -2,43 +2,16 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { THEME } from "../../colorscheme/index.jsx";
 
-console.log(THEME.footerIconColor);
-console.log("over");
-
-// const backgroundColor = "#aaaaaa";
-const backgroundColor = THEME.backgroundColor;
-const navbarBackgroundColor = THEME.navbarBackgroundColor;
-const navbarLogoColor = THEME.navbarLogoColor;
-
-const hiddenTextColor = THEME.hiddenTextColor;
-const headingColor = THEME.headingColor;
-const serialColor = THEME.serialColor;
-
-const buttonColor = THEME.buttonColor;
-const buttonHoverColor = THEME.buttonHoverColor;
-const buttonBorder = THEME.buttonBorder;
-
-// const cardHeaderHoverColor = "gray-900"; /* Tailwind */
-const cardHeaderHoverColor = "customColors-one-300"; /* Tailwind */
-const cardBorder = THEME.cardBorder;
-const cardHoverBodyBorder = "customColors-one-300";
-
-const footerIconColor = "customColors-one-400"; /* Tailwind */
-const footerIconHoverColor = "customColors-one-300"; /* Tailwind */
-
-const logoHover = "customColors-one-400";
-const logoTextOnHover = "customColors-one-100";
-
 const buttonStyle =
-  " text-base md:text-xl lg:text-2xl  font-medium tracking-wide rounded-2xl p-4 border-4 border-" +
-  buttonBorder +
+  " text-base md:text-xl lg:text-2xl font-medium tracking-wide rounded-2xl p-4 border-4 border-" +
+  THEME.button.border +
   " ";
 
 export const buttonHoverStyle =
-  buttonStyle + " hover:bg-" + buttonHoverColor + " hover:text";
+  buttonStyle + " hover:bg-" + THEME.button.hover.background + " hover:text";
 
 export const buttonChoosenStyle =
-  buttonStyle + " bg-" + buttonColor + " text-white";
+  buttonStyle + " bg-" + THEME.button.background + " text-white";
 
 export const CustomContent = styled.div`
   ${tw`
@@ -93,7 +66,7 @@ export const CustomSubHeading = styled.div`
 export const Pages = styled.div`
   min-height: 80vh;
   min-width: 80vw;
-  background-color: ${backgroundColor};
+  background-color: ${THEME.page.background};
   ${tw`
     rounded-2xl
     px-4
@@ -113,7 +86,7 @@ export const Pages = styled.div`
 `};
 `;
 export const Navbar = styled.ul`
-  background-color: ${navbarBackgroundColor};
+  background-color: ${THEME.navbar.background};
   max-width: 100vw;
   position: sticky;
   z-index: 1;
@@ -145,7 +118,7 @@ export const Navbar = styled.ul`
 `;
 
 export const NavbarLogo = styled.li`
-  color: ${navbarLogoColor};
+  color: ${THEME.navbar.logo.color};
   ${tw`
     w-full
     h-full
@@ -180,7 +153,7 @@ export const NavComponents = styled.li`
 `;
 
 export const SerialNo = styled.span`
-  color: ${serialColor};
+  color: ${THEME.text.serial};
   ${tw`
     text-3xl
     md:text-6xl
@@ -192,7 +165,7 @@ export const SerialNo = styled.span`
 export const HiddenHeading = styled.div`
   position: relative;
   z-index: 0;
-  color: ${hiddenTextColor};
+  color: ${THEME.text.hidden.color};
 
   ${tw`
     left-8
@@ -241,7 +214,7 @@ export const SubHiddenHeading = styled.div`
 export const Heading = styled.div`
   position: relative;
   z-index: 2;
-  color: ${headingColor};
+  color: ${THEME.text.heading.color};
   ${tw`
     text-3xl
     md:text-6xl
@@ -357,26 +330,23 @@ export const FooterIcons = styled.ul`
 export const FooterIcon = styled.li`
   ${tw`
     text-4xl
-    text-${footerIconColor}
-    hover:text-${footerIconHoverColor}
     list-none
 `}
 `;
 export const Card = styled.div`
-  border: 2px solid ${cardBorder};
+  border: 2px solid ${THEME.card.overall.border};
   ${tw`
     flex
     flex-nowrap
     mx-4
     space-x-2
     hover:shadow-2xl
-    hover:border-${cardHoverBodyBorder}
     rounded-2xl
 `}
 `;
 
 export const CardHeader = styled.div`
-  border-right: 2px solid ${cardBorder};
+  border-right: 2px solid ${THEME.card.overall.border};
   ${tw`
     flex
     flex-col
@@ -384,7 +354,6 @@ export const CardHeader = styled.div`
     justify-center
     p-2
     h-full
-    group-hover:bg-${cardHeaderHoverColor}
     group-hover:rounded-2xl
     group-hover:text-white
 `}
@@ -418,6 +387,8 @@ export const CardTitle = styled.div`
 `;
 export const CardContent = styled.span`
   ${tw`
+    py-2
+    px-2
     text-sm
     flex
     flex-wrap
@@ -442,7 +413,7 @@ export const CardContent = styled.span`
 `;
 
 export const Logo = styled.div`
-  border: 2px solid ${cardBorder};
+  border: 2px solid ${THEME.card.overall.border};
   ${tw`
     flex
     flex-wrap
@@ -464,8 +435,6 @@ export const Logo = styled.div`
     text-black
     
     hover:shadow-xl
-    hover:text-${logoTextOnHover}
-    hover:bg-${logoHover}
     hover:shadow
     hover:border-transparent
 `};

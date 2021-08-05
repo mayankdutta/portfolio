@@ -6,12 +6,15 @@ import {
   CardTitle,
   CardContent,
 } from "../styledComponents/index.jsx";
+import { THEME } from "../../colorscheme/index.jsx";
 
 const App = (props) => {
   return (
-    <Card className="group">
+    <Card className={"group hover:border-" + THEME.card.body.body}>
       <a href={props.href} target="_blank" rel="noopener noreferrer">
-        <CardHeader>
+        <CardHeader
+          className={"group-hover:bg-" + THEME.card.head.hover.background}
+        >
           <CardImage>
             <img src={props.link} alt="image" />
           </CardImage>
