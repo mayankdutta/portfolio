@@ -65,21 +65,20 @@ export const CustomSubHeading = styled.div`
 
 export const Pages = styled.div`
   min-height: 80vh;
-  min-width: 80vw;
   background-color: ${THEME.page.background};
   ${tw`
     rounded-2xl
     px-4
-    py-0
+    py-4
     pt-2
-    my-1
-    mx-8
+    my-4
+    mx-2
 
     md:px-12
-    md:py-2
+    md:py-4
     md:pt-6
     md:my-4
-    md:mx-8
+    md:mx-4
 
     lg:px-32
     lg:py-8
@@ -424,22 +423,37 @@ export const Logo = styled.div`
     justify-center
     items-center
     
-    space-x-2
-    space-y-2
-    
-    p-2
-    mx-4
-
     rounded-2xl
-    
-    font-sans
-    font-medium
-    
+
     text-black
     
     hover:shadow-xl
     hover:shadow
     hover:border-transparent
+
+    space-x-2
+    space-y-2
+    p-2
+    mx-4
+    font-sans
+    text-xs
+
+    md:space-x-2
+    md:space-y-2
+    md:p-2
+    md:mx-4
+    md:font-sans
+    md:font-medium
+    md:text-base
+
+    lg:space-x-2
+    lg:space-y-2
+    lg:p-2
+    lg:mx-4
+    lg:font-sans
+    lg:font-medium
+    lg:text-base
+    
 `};
 `;
 
@@ -449,6 +463,14 @@ export const ButtonLarge = styled.div`
     flex
     flex-wrap
     justify-center
-    space-x-4
+    items-center
+
+    space-y-2
+
+    md:space-x-4
+    md:space-y-0
+
+    lg:space-x-4
+    lg:space-y-0
 `};
 `;

@@ -25,7 +25,10 @@ const App = () => {
       <Content>
         <ButtonLarge>
           <div
-            className={currStyleCp}
+            className={
+              "flex justify-center items-center flew-wrap w-full md:w-auto lg:w-auto " +
+              currStyleCp
+            }
             onClick={() => {
               setRendercp(true);
               setCurrStyleCp(buttonChoosenStyle);
@@ -35,7 +38,10 @@ const App = () => {
             Problem Solving
           </div>
           <div
-            className={currStyleDevelopment}
+            className={
+              "flex justify-center items-center flew-wrap w-full md:w-auto lg:w-auto " +
+              currStyleDevelopment
+            }
             onClick={() => {
               setRendercp(false);
               setCurrStyleCp(buttonHoverStyle);
