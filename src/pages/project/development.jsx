@@ -43,7 +43,7 @@ const App = () => {
               <h1>- Can also be used as a TODO list</h1>
               <h1>
                 - Tech stack
-                <span className="flex">
+                <span className="flex flex-wrap">
                   <Tailwind /> <ReactJs />
                 </span>
               </h1>
@@ -61,7 +61,7 @@ const App = () => {
               <h1>- Help user to guage his abilities.</h1>
               <h1>
                 - Tech stack
-                <span className="flex">
+                <span className="flex flex-wrap">
                   <Tailwind /> <ReactJs />
                 </span>
               </h1>
@@ -86,7 +86,7 @@ const App = () => {
               <h1>- I handled the UI/UX of the site</h1>
               <h1>
                 - Tech stack
-                <span className="flex">
+                <span className="flex flex-wrap">
                   <Tailwind /> <Bootstrap />
                 </span>
               </h1>
@@ -120,7 +120,7 @@ const App = () => {
                 >
                   config
                 </a>
-                <span className="flex">
+                <span className="flex flex-wrap">
                   <Neovim /> <Vim />
                 </span>
               </h1>

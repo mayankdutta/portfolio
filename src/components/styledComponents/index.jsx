@@ -422,14 +422,12 @@ export const CardContent = styled.span`
     flex
     flex-wrap
     flex-shrink
-    flex-grow
     items-center
     justify-center
 
     md:text-base
     md:flex
     md:flex-wrap
-    md:flex-shrink
     md:flex-grow
     md:items-center
     md:justify-center
@@ -437,7 +435,6 @@ export const CardContent = styled.span`
     lg:text-base
     lg:flex
     lg:flex-wrap
-    lg:flex-shrink
     lg:flex-grow
     lg:items-center
     lg:justify-center
