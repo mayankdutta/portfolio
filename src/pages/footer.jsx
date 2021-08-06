@@ -61,7 +61,11 @@ const App = () => {
         </FooterIcon>
       </FooterIcons>
       <FooterIcons>
-        <div className="font-sans italic font-light my-4">
+        <div
+          className={
+            "font-sans italic font-light my-4 text-" + THEME.footer.color
+          }
+        >
           crafted from scratch by mayank
         </div>
       </FooterIcons>

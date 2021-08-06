@@ -28,10 +28,13 @@ import { DiJavascript1 } from "react-icons/di";
 import { FcTreeStructure } from "react-icons/fc";
 
 const LogoClass =
-  " hover:bg-" +
+  " group hover:bg-" +
   THEME.logo.hover.background +
   " hover:text-" +
   THEME.logo.hover.color;
+
+const LogoText =
+  "text-" + THEME.logo.color + " group-hover:text-" + THEME.logo.hover.color;
 
 export const Cpp = () => {
   return (
@@ -39,7 +42,7 @@ export const Cpp = () => {
       <span className={"text-4xl list-none text-blue-700 mx-2"}>
         <SiCplusplus />
       </span>
-      C++
+      <span className={LogoText}>C++</span>
     </Logo>
   );
 };
@@ -49,7 +52,7 @@ export const ReactJs = () => {
       <span className={"text-4xl list-none text-blue-800 mx-2"}>
         <SiReact />
       </span>
-      ReactJs
+      <span className={LogoText}>ReactJs</span>
     </Logo>
   );
 };
@@ -59,7 +62,7 @@ export const Bootstrap = () => {
       <span className={"text-4xl list-none text-purple-700 mx-2"}>
         <SiBootstrap />
       </span>
-      Bootstrap
+      <span className={LogoText}>Bootstrap</span>
     </Logo>
   );
 };
@@ -69,7 +72,7 @@ export const Bash = () => {
       <span className={"text-4xl list-none text-purple-800 mx-2"}>
         <SiGnubash />
       </span>
-      Bash
+      <span className={LogoText}>Bash</span>
     </Logo>
   );
 };
@@ -79,7 +82,7 @@ export const Tailwind = () => {
       <span className={"text-4xl list-none text-blue-600 mx-2"}>
         <SiTailwindcss />
       </span>
-      Tailwind
+      <span className={LogoText}>Tailwind</span>
     </Logo>
   );
 };
@@ -89,7 +92,7 @@ export const Css = () => {
       <span className={"text-4xl list-none text-yellow-600 mx-2"}>
         <SiCss3 />
       </span>
-      CSS
+      <span className={LogoText}>CSS</span>
     </Logo>
   );
 };
@@ -99,7 +102,7 @@ export const Vim = () => {
       <span className={"text-4xl list-none text-green-700 mx-2"}>
         <SiVim />
       </span>
-      vimscript
+      <span className={LogoText}>vimscript</span>
     </Logo>
   );
 };
@@ -109,7 +112,7 @@ export const Html = () => {
       <span className={"text-4xl list-none text-red-700 mx-2"}>
         <SiHtml5 />
       </span>
-      HTML
+      <span className={LogoText}>HTML</span>
     </Logo>
   );
 };
@@ -119,7 +122,7 @@ export const Js = () => {
       <span className={"text-4xl list-none text-yellow-800 mx-2"}>
         <DiJavascript1 />
       </span>
-      Js
+      <span className={LogoText}>Js</span>
     </Logo>
   );
 };
@@ -129,7 +132,7 @@ export const Git = () => {
       <span className={"text-4xl list-none text-gray-800 mx-2"}>
         <SiGithub />
       </span>
-      Git and Github
+      <span className={LogoText}>Git and Github</span>
     </Logo>
   );
 };
@@ -139,7 +142,7 @@ export const Terminal = () => {
       <span className={"text-4xl list-none text-purple-800 mx-2"}>
         <BsFillTerminalFill />
       </span>
-      Terminal
+      <span className={LogoText}>Terminal</span>
     </Logo>
   );
 };
@@ -149,7 +152,7 @@ export const Neovim = () => {
       <span className={"text-4xl list-none text-green-700 mx-2"}>
         <SiNeovim />
       </span>
-      Neovim
+      <span className={LogoText}>Neovim</span>
     </Logo>
   );
 };
@@ -159,7 +162,7 @@ export const Sublime = () => {
       <span className={"text-4xl list-none text-yellow-600 mx-2"}>
         <SiSublimetext />
       </span>
-      Sublime
+      <span className={LogoText}>Sublime</span>
     </Logo>
   );
 };
@@ -169,7 +172,7 @@ export const Jetbrains = () => {
       <span className={"text-4xl list-none text-gray-800 mx-2"}>
         <SiJetbrains />
       </span>
-      Jetbrains
+      <span className={LogoText}>Jetbrains</span>
     </Logo>
   );
 };
@@ -179,7 +182,7 @@ export const Vs = () => {
       <span className={"text-4xl list-none text-blue-700 mx-2"}>
         <SiVisualstudio />
       </span>
-      Visual studio code
+      <span className={LogoText}>Visual studio code</span>
     </Logo>
   );
 };
@@ -190,7 +193,7 @@ export const CF = () => {
       <span className={"text-4xl list-none text-gray-800 mx-2"}>
         <SiCodeforces />
       </span>
-      Cf
+      <span className={LogoText}>Cf</span>
     </Logo>
   );
 };
@@ -201,7 +204,7 @@ export const CC = () => {
       <span className={"text-4xl list-none text-yellow-800 mx-2"}>
         <SiCodechef />
       </span>
-      CC
+      <span className={LogoText}>CC</span>
     </Logo>
   );
 };
@@ -212,7 +215,7 @@ export const USACO = () => {
       <span className={"text-4xl list-none text-indigo-700 mx-2"}>
         <SiHappycow />
       </span>
-      USACO
+      <span className={LogoText}>USACO</span>
     </Logo>
   );
 };
@@ -222,7 +225,7 @@ export const CA = () => {
       <span className={"text-4xl list-none text-blue-500 mx-2"}>
         <SiCodecademy />
       </span>
-      CA
+      <span className={LogoText}>CA</span>
     </Logo>
   );
 };
@@ -232,7 +235,7 @@ export const DS = () => {
       <span className={"text-4xl list-none text-blue-500 mx-2"}>
         <FcTreeStructure />
       </span>
-      Data Structure and algorithm
+      <span className={LogoText}>Data Structure and algorithm</span>
     </Logo>
   );
 };
@@ -242,7 +245,7 @@ export const Shells = () => {
       <span className={"text-4xl list-none text-gray-700 mx-2"}>
         <SiPowershell />
       </span>
-      Shells
+      <span className={LogoText}>Shells</span>
       <span className="italic font-light">(fish, zsh, bash)</span>
     </Logo>
   );

@@ -15,7 +15,11 @@ const buttonStyle =
   THEME.button.text;
 
 export const buttonHoverStyle =
-  buttonStyle + " hover:bg-" + THEME.button.hover.background + " hover:text";
+  buttonStyle +
+  " hover:bg-" +
+  THEME.button.hover.background +
+  "  text-" +
+  THEME.button.color;
 
 export const buttonChoosenStyle =
   buttonStyle + " bg-" + THEME.button.background + " text-white";
@@ -136,19 +140,16 @@ export const NavbarLogo = styled.li`
     h-full
 
     flex
-    flex-row-reverse
     text-xl
     font-medium
 
     md:w-full
     md:flex
-    md:flex-row-reverse
     md:text-2xl
     md:font-medium
 
     lg:w-full
     lg:flex
-    lg:flex-row-reverse
     lg:text-2xl
     lg:font-medium
 `};
@@ -181,7 +182,7 @@ export const HiddenHeading = styled.div`
 
   ${tw`
     left-8
-    bottom-4
+    bottom-6
     text-3xl
     inline-flex
     tracking-widest
@@ -416,8 +417,6 @@ export const CardTitle = styled.div`
 `;
 export const CardContent = styled.span`
   ${tw`
-  border-4
-  border-green-400
     py-2
     px-2
     text-sm
@@ -427,12 +426,17 @@ export const CardContent = styled.span`
     items-center
     justify-center
 
+           group-hover:rounded-2xl
+
     md:text-base
     md:flex
     md:flex-wrap
     md:flex-grow
     md:items-center
     md:justify-center
+    md:w-full
+    md:h-full
+
 
     lg:text-base
     lg:flex
@@ -440,6 +444,9 @@ export const CardContent = styled.span`
     lg:flex-grow
     lg:items-center
     lg:justify-center
+    lg:w-full
+    lg:h-full
+
 `}
 `;
 

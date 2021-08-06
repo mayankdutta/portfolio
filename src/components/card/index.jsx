@@ -21,7 +21,7 @@ const App = (props) => {
           className={
             "group-hover:bg-" +
             THEME.card.head.hover.background +
-            " border-b-4 md:border-r-4 lg:border-r-4 border-" +
+            " border-b-4 md:border-r-4 lg:border-r-4 border-transparent group-hover:border-" +
             THEME.card.head.border
           }
         >
@@ -36,7 +36,8 @@ const App = (props) => {
           "group-hover:bg-" +
           THEME.card.body.hover.background +
           " group-hover:text-" +
-          THEME.card.body.hover.color
+          THEME.card.body.hover.color +
+          " group-hover:rounded-2xl"
         }
       >
         {props.content}
