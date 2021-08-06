@@ -34,7 +34,10 @@ const LogoClass =
   THEME.logo.hover.color;
 
 const LogoText =
-  "text-" + THEME.logo.color + " group-hover:text-" + THEME.logo.hover.color;
+  "text-" +
+  THEME.logo.color +
+  " group-hover:text-" +
+  THEME.logo.hover.group.color;
 
 export const Cpp = () => {
   return (

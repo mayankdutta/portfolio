@@ -10,7 +10,7 @@ const App = () => {
     <CustomContent>
       <CustomHeading>Mayank Dutta</CustomHeading>
       <CustomSubHeading>Competitive Programmer.</CustomSubHeading>
-      <CustomSubHeading>UI/UX designer. I use Vim btw</CustomSubHeading>
+      <CustomSubHeading>UI/UX designer. </CustomSubHeading>
       <CustomSubHeading>Vim user</CustomSubHeading>
     </CustomContent>
   );

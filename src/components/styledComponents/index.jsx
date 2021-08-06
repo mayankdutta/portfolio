@@ -104,7 +104,7 @@ export const Navbar = styled.ul`
   background-color: ${THEME.navbar.background};
   max-width: 100vw;
   position: sticky;
-  border: 2px solid ${THEME.navbar.border};
+  border: 2px solid ${THEME.navbar.border || "transparent"};
   z-index: 1;
   ${tw`
     py-2
@@ -297,6 +297,7 @@ export const Content = styled.div`
 `;
 
 export const SubContent = styled.div`
+  color: ${THEME.text.normal};
   min-width: 40vw;
   /* max-width: 60vw; */
   ${tw`
