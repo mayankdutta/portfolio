@@ -39,7 +39,7 @@ export const Dark = {
       color: DraculaColor.pink,
       background: "",
     },
-    serial: DraculaColor.pink,
+    serial: DraculaColor.green,
     hidden: {
       color: DraculaColor.darkPurple,
       background: "",
@@ -59,7 +59,7 @@ export const Dark = {
 
   card: {
     overall: {
-      background: "",
+      background: DraculaColor.darkPurple,
       border: DraculaColor.pink,
       hover: {
         background: "" /* tailwind.config.js */,

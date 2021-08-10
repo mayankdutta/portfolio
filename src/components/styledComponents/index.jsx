@@ -28,9 +28,7 @@ export const CustomContent = styled.div`
   ${tw`
     flex 
     flex-col 
-
     w-full 
-
     justify-center
     items-center
 `};
@@ -47,15 +45,9 @@ export const CustomHeading = styled.div`
 
     md:text-4xl
     md:font-light
-    md:flex   
-    md:justify-center 
-    md:items-center
 
     lg:text-8xl
     lg:font-extralight
-    lg:flex   
-    lg:justify-center 
-    lg:items-center
 `};
 `;
 
@@ -89,7 +81,6 @@ export const Pages = styled.div`
     mx-8
 
     md:px-12
-    md:py-4
     md:pt-6
     md:my-4
     md:mx-16
@@ -108,29 +99,21 @@ export const Navbar = styled.ul`
   border: 2px solid ${THEME.navbar.border || "transparent"};
   z-index: 1;
   ${tw`
-    py-2
-    px-2
+    p-2
     flex
     top-2
     bg-opacity-10
     rounded-xl
     shadow
 
-    md:py-4
-    md:px-4
-    md:flex
+    md:p-4
     md:top-4
-    md:bg-opacity-10
     md:rounded-2xl
-    md:shadow
 
     lg:py-4
     lg:px-8
-    lg:flex
     lg:top-4
-    lg:bg-opacity-10
     lg:rounded-2xl
-    lg:shadow
 `};
 `;
 
@@ -143,16 +126,6 @@ export const NavbarLogo = styled.li`
     flex
     text-xl
     font-medium
-
-    md:w-full
-    md:flex
-    md:text-2xl
-    md:font-medium
-
-    lg:w-full
-    lg:flex
-    lg:text-2xl
-    lg:font-medium
 `};
 `;
 
@@ -167,6 +140,8 @@ export const NavComponents = styled.li`
 `;
 
 export const SerialNo = styled.span`
+  position: relative;
+  z-index: 0;
   color: ${THEME.text.serial};
   ${tw`
     text-3xl
@@ -209,13 +184,7 @@ export const SubHiddenHeading = styled.div`
     font-medium
 
     md:text-xl
-    md:tracking-wide
-    md:font-medium
-
     lg:text-4xl
-    lg:tracking-wide
-    lg:font-medium
-
 `};
 `;
 
@@ -242,12 +211,8 @@ export const SubHeading = styled.div`
     text-lg
 
     md:text-xl
-    md:tracking-wide
-    md:font-medium
 
     lg:text-5xl
-    lg:tracking-wide
-    lg:font-medium
 `};
 `;
 
@@ -259,12 +224,8 @@ export const MainHeading = styled.div`
     font-medium
 
     md:text-2xl
-    md:tracking-wider
-    md:font-medium
 
     lg:text-4xl
-    lg:tracking-wider
-    lg:font-medium
 `};
 `;
 
@@ -276,12 +237,7 @@ export const MinorHeading = styled.span`
     font-bold
 
     md:text-base
-    md:tracking-wider
-    md:font-bold
-
     lg:text-xl
-    lg:tracking-wider
-    lg:font-bold
 `};
 `;
 
@@ -315,11 +271,8 @@ export const Icons = styled.ul`
     gap-y-2
     
     md:grid-cols-2
-    md:gap-x-0
-    md:gap-y-2
     
     lg:grid-cols-3
-    lg:gap-x-0
     lg:gap-y-4
 `}
 `;
@@ -328,13 +281,6 @@ export const Footer = styled.div`
   ${tw`
     py-4
     mb-4
-
-    md:py-4
-    md:mb-4
-
-    lg:py-4
-    lg:mb-4
-
 `}
 `;
 export const FooterIcons = styled.ul`
@@ -409,20 +355,12 @@ export const CardTitle = styled.div`
     justify-center
 
     md:text-base
-    md:flex
-    md:items-center
-    md:justify-center
-
     lg:text-xl
-    lg:flex
-    lg:items-center
-    lg:justify-center
 `}
 `;
 export const CardContent = styled.span`
   ${tw`
-    py-2
-    px-2
+    p-2
     text-xs
     flex
     flex-wrap
@@ -433,24 +371,15 @@ export const CardContent = styled.span`
     group-hover:rounded-2xl
 
     md:text-base
-    md:flex
-    md:flex-wrap
     md:flex-grow
-    md:items-center
-    md:justify-center
     md:w-full
     md:h-full
 
 
     lg:text-lg
-    lg:flex
-    lg:flex-wrap
     lg:flex-grow
-    lg:items-center
-    lg:justify-center
     lg:w-full
     lg:h-full
-
 `}
 `;
 
@@ -475,25 +404,8 @@ export const Logo = styled.div`
     space-y-2
     p-2
     mx-4
-    font-sans
     text-xs
 
-    md:space-x-2
-    md:space-y-2
-    md:p-2
-    md:mx-4
-    md:font-sans
-    md:font-medium
-    md:text-base
-
-    lg:space-x-2
-    lg:space-y-2
-    lg:p-2
-    lg:mx-4
-    lg:font-sans
-    lg:font-medium
-    lg:text-base
-    
 `};
 `;
 

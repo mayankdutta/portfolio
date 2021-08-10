@@ -8,46 +8,47 @@ import {
 } from "../styledComponents/index.jsx";
 import { THEME } from "../../colorscheme/index.jsx";
 
+const cardStyle =
+  "group hover:border-" +
+  THEME.card.body.body +
+  " bg-" +
+  THEME.card.body.background;
+
+const cardHeaderStyle =
+  "group-hover:bg-" +
+  THEME.card.head.hover.background +
+  " border-b-4 md:border-r-4 lg:border-r-4 border-transparent group-hover:border-" +
+  THEME.card.head.border +
+  " group-hover:text" +
+  THEME.card.head.hover.color;
+
+const cardTitleStyle = " group-hover:text-" + THEME.card.head.hover.color;
+const cardAnchorStyle = "w-full md:w-auto md:h-full lg:w-auto lg:h-full";
+
+const cardContentStyle =
+  "bg-" +
+  THEME.card.body.background +
+  " text-" +
+  THEME.card.body.color +
+  " rounded-2xl";
+
 const App = (props) => {
   return (
-    <Card className={"group hover:border-" + THEME.card.body.body}>
+    <Card className={cardStyle}>
       <a
         href={props.href}
         target="_blank"
-        className="w-full md:w-auto md:h-full lg:w-auto lg:h-full"
+        className={cardAnchorStyle}
         rel="noopener noreferrer"
       >
-        <CardHeader
-          className={
-            "group-hover:bg-" +
-            THEME.card.head.hover.background +
-            " border-b-4 md:border-r-4 lg:border-r-4 border-transparent group-hover:border-" +
-            THEME.card.head.border +
-            " group-hover:text" +
-            THEME.card.head.hover.color
-          }
-        >
+        <CardHeader className={cardHeaderStyle}>
           <CardImage>
             <img src={props.link} alt="" />
           </CardImage>
-          <CardTitle
-            className={" group-hover:text-" + THEME.card.head.hover.color}
-          >
-            {props.name}
-          </CardTitle>
+          <CardTitle className={cardTitleStyle}>{props.name}</CardTitle>
         </CardHeader>
       </a>
-      <CardContent
-        className={
-          "bg-" +
-          THEME.card.body.background +
-          " text-" +
-          THEME.card.body.color +
-          " rounded-2xl"
-        }
-      >
-        {props.content}
-      </CardContent>
+      <CardContent className={cardContentStyle}>{props.content}</CardContent>
     </Card>
   );
 };
