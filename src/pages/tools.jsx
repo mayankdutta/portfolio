@@ -19,7 +19,7 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>5. </SerialNo> Tools Under my Belt
+        <SerialNo>5. </SerialNo> Tools Under my belt
       </Heading>
       <HiddenHeading> Tools </HiddenHeading>
       <Icons>

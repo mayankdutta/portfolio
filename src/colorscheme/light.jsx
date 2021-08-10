@@ -6,7 +6,7 @@ const DefaultColor = {
   reddish: "#F6416C" /* reddish */,
 };
 
-export const THEME = {
+export const Light = {
   body: {
     background: DefaultColor.darkYellow,
     border: "",

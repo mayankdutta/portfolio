@@ -52,7 +52,7 @@ export const CustomHeading = styled.div`
     md:items-center
 
     lg:text-8xl
-    lg:font-light
+    lg:font-extralight
     lg:flex   
     lg:justify-center 
     lg:items-center
@@ -65,13 +65,14 @@ export const CustomSubHeading = styled.div`
     text-center
     text-xs
     font-medium
+    tracking-wide
 
     md:text-base
     md:font-medium
     md:w-96
 
     lg:text-xl
-    lg:font-medium
+    lg:font-bold
     lg:w-96
 `};
 `;
@@ -185,22 +186,18 @@ export const HiddenHeading = styled.div`
     bottom-6
     text-3xl
     inline-flex
-    tracking-widest
-    font-extrabold
+    tracking-wide
+    font-black
 
     md:left-40
     md:bottom-20
     md:text-6xl
     md:inline-flex
-    md:tracking-widest
-    md:font-extrabold
 
     lg:left-40
     lg:bottom-20
     lg:text-9xl
     lg:inline-flex
-    lg:tracking-widest
-    lg:font-extrabold
 `};
 `;
 
@@ -229,9 +226,9 @@ export const Heading = styled.div`
   ${tw`
     text-3xl
     md:text-6xl
-    lg:text-7xl
+    lg:text-8xl
 
-    font-light
+    font-extralight
 `};
 `;
 
@@ -241,12 +238,14 @@ export const SubHeading = styled.div`
     text-base
     tracking-wide
     font-medium
+    font-sans
+    text-lg
 
     md:text-xl
     md:tracking-wide
     md:font-medium
 
-    lg:text-4xl
+    lg:text-5xl
     lg:tracking-wide
     lg:font-medium
 `};
@@ -301,6 +300,10 @@ export const SubContent = styled.div`
   min-width: 40vw;
   /* max-width: 60vw; */
   ${tw`
+
+text-xs
+  md:text-lg
+  lg:text-xl
 `};
 `;
 
@@ -420,14 +423,14 @@ export const CardContent = styled.span`
   ${tw`
     py-2
     px-2
-    text-sm
+    text-xs
     flex
     flex-wrap
     flex-shrink
     items-center
     justify-center
 
-           group-hover:rounded-2xl
+    group-hover:rounded-2xl
 
     md:text-base
     md:flex
@@ -439,7 +442,7 @@ export const CardContent = styled.span`
     md:h-full
 
 
-    lg:text-base
+    lg:text-lg
     lg:flex
     lg:flex-wrap
     lg:flex-grow

@@ -22,22 +22,28 @@ const App = (props) => {
             "group-hover:bg-" +
             THEME.card.head.hover.background +
             " border-b-4 md:border-r-4 lg:border-r-4 border-transparent group-hover:border-" +
-            THEME.card.head.border
+            THEME.card.head.border +
+            " group-hover:text" +
+            THEME.card.head.hover.color
           }
         >
           <CardImage>
             <img src={props.link} alt="" />
           </CardImage>
-          <CardTitle>{props.name}</CardTitle>
+          <CardTitle
+            className={" group-hover:text-" + THEME.card.head.hover.color}
+          >
+            {props.name}
+          </CardTitle>
         </CardHeader>
       </a>
       <CardContent
         className={
-          "group-hover:bg-" +
-          THEME.card.body.hover.background +
-          " group-hover:text-" +
-          THEME.card.body.hover.color +
-          " group-hover:rounded-2xl"
+          "bg-" +
+          THEME.card.body.background +
+          " text-" +
+          THEME.card.body.color +
+          " rounded-2xl"
         }
       >
         {props.content}

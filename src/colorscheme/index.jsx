@@ -1,15 +1,20 @@
-import { THEME } from "./dracula.jsx";
+// import { Dark } from "./dracula.jsx";
+import { Dark } from "./dracula.jsx";
+import { Light } from "./light.jsx";
+
 // import { THEME } from "./light.jsx";
 
-const Theme = (props) => {
-  console.log("clicked");
-  // if (props.DarkMode === true) {
-  //   THEME = DraculaTheme;
-  //   console.log("dracula theme");
-  // } else {
-  //   THEME = DefaultTheme;
-  //   console.log("default theme");
-  // }
+let value = true;
+console.log(value);
+let THEME = Dark;
+
+const App = (props) => {
+  value = props.value;
 };
-export default Theme;
+
+THEME = value === true ? Dark : Light;
+console.log(value);
+
+// const THEME = Dark;
+export default App;
 export { THEME };

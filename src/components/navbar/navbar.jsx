@@ -9,7 +9,9 @@ import {
 const App = () => {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
-    <Theme DarkMode={darkMode} />;
+    console.log("Calling start");
+    <Theme value={darkMode} />;
+    console.log("Calling end");
   }, [darkMode]);
 
   return (
@@ -20,11 +22,7 @@ const App = () => {
           setDarkMode(!darkMode);
         }}
       >
-        {darkMode ? (
-          <span> Light mode(under Construction)</span>
-        ) : (
-          <span>Dark Mode(you are seeing this)</span>
-        )}
+        {darkMode ? <span> </span> : <span></span>}
       </NavbarLogo>
       <NavbarLogo className="flex-row-reverse">
         <a

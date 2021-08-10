@@ -30,6 +30,7 @@ const App = () => {
           <ProgressBar width="60%" language="ReactJs" />
           <ProgressBar width="80%" language="Javascript" />
           <ProgressBar width="50%" language="Shell scripting" />
+          <ProgressBar width="93%" language="Data structure and Algorithms" />
         </SubContent>
       </Content>
     </>

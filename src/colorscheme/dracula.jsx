@@ -7,7 +7,7 @@ const DraculaColor = {
   white: "#f8f8f2",
 };
 
-export const THEME = {
+export const Dark = {
   body: {
     background: DraculaColor.darkPurple,
     border: "",
@@ -68,14 +68,17 @@ export const THEME = {
     },
     head: {
       background: "",
-      border: "customColors-dracula-green",
+      border: "customColors-dracula-pink",
+      color: "",
       hover: {
-        background: "customColors-dracula-pink" /* tailwind.config.js */,
+        background: "customColors-dracula-green" /* tailwind.config.js */,
         border: "",
+        color: "black",
       },
     },
     body: {
-      background: "",
+      background: "customColors-dracula-darkPurple",
+      color: "customColors-dracula-pink",
       border: "" /* tailwind.config.js*/,
       hover: {
         background: "customColors-dracula-darkPurple",
