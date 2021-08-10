@@ -18,6 +18,12 @@ const colors = {
         pink: "#F678C5",
         white: "#f8f8f2",
       },
+      grey: {
+        one: "#F4F4F2",
+        two: "#E8E8E8",
+        three: "#BBBFCA",
+        four: "#495464",
+      },
     },
   },
 };
