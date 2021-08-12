@@ -44,6 +44,9 @@ export const Dark = {
       color: DraculaColor.darkPurple,
       background: "",
     },
+    subHidden: {
+      color: DraculaColor.green,
+    },
   },
 
   button: {

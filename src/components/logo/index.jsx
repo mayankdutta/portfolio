@@ -187,7 +187,7 @@ export const Vs = () => {
       <span className={Icon + " text-blue-700 "}>
         <SiVisualstudio />
       </span>
-      <span className={LogoText}>Visual studio code</span>
+      <span className={LogoText}>Vs code</span>
     </Logo>
   );
 };

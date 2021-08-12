@@ -95,7 +95,7 @@ export const Pages = styled.div`
 export const Navbar = styled.ul`
   background-color: ${THEME.navbar.background};
   max-width: 100vw;
-  position: sticky;
+  // position: sticky;
   border: 2px solid ${THEME.navbar.border || "transparent"};
   z-index: 1;
   ${tw`
@@ -177,7 +177,7 @@ export const HiddenHeading = styled.div`
 `;
 
 export const SubHiddenHeading = styled.div`
-  color: ${THEME.text.subHeading};
+  color: ${THEME.text.subHidden.color};
   ${tw`
     text-xl
     tracking-wide

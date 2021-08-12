@@ -20,7 +20,7 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>4. </SerialNo> Love to spend time with
+        <SerialNo>3. </SerialNo> Love to spend time with
       </Heading>
       <HiddenHeading> Projects </HiddenHeading>
       <Content>

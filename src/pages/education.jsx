@@ -14,22 +14,9 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>3. </SerialNo>Education
+        <SerialNo>2. </SerialNo>Education
       </Heading>
       <HiddenHeading>Education</HiddenHeading>
-      <Content>
-        <SubContent>
-          <SubHiddenHeading>
-            Little Flowers public sr. sec. school
-          </SubHiddenHeading>
-          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
-            Class 10th: 10CGPA
-          </div>
-          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
-            Class 12th: 88.8%
-          </div>
-        </SubContent>
-      </Content>
       <Content>
         <SubContent>
           <MinorHeading>Faculty of Engineering</MinorHeading>
@@ -45,6 +32,19 @@ const App = () => {
           </div>
           <div className="tracking-wider text-sm font-medium">
             GPA till now: 8.57
+          </div>
+        </SubContent>
+      </Content>
+      <Content>
+        <SubContent>
+          <SubHiddenHeading>
+            Little Flowers public sr. sec. school
+          </SubHiddenHeading>
+          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
+            Class 10th: 10CGPA
+          </div>
+          <div className="tracking-wider text-xs md:text-sm lg:text-sm font-medium">
+            Class 12th: 88.8%
           </div>
         </SubContent>
       </Content>

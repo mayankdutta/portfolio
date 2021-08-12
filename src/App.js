@@ -25,13 +25,13 @@ const App = () => {
         <AboutMe />
       </Pages>
       <Pages>
-        <Tech />
-      </Pages>
-      <Pages>
         <Education />
       </Pages>
       <Pages>
         <Projects />
+      </Pages>
+      <Pages>
+        <Tech />
       </Pages>
       <Pages>
         <Tools />
