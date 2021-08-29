@@ -8,8 +8,10 @@ import Projects from "./pages/project/index.jsx";
 import Tools from "./pages/tools.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
+import Achievements from "./pages/achievements.jsx";
 import { Pages } from "./components/styledComponents/index.jsx";
 import { THEME } from "./colorscheme/index.jsx";
+// import "./App.scss";
 
 const App = () => {
   return (
@@ -35,6 +37,9 @@ const App = () => {
       </Pages>
       <Pages>
         <Tools />
+      </Pages>
+      <Pages>
+        <Achievements />
       </Pages>
       <Pages>
         <Contact />

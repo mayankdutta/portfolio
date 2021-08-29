@@ -3,8 +3,6 @@ import Card from "../../components/card/index.jsx";
 import {} from "../../components/styledComponents/index.jsx";
 import styled from "styled-components";
 import tw from "twin.macro";
-import { CF, CC, USACO } from "../../components/logo/index.jsx";
-import { styleProjectMiniIcons } from "../../components/styledComponents/index.jsx";
 import { THEME } from "../../colorscheme/index.jsx";
 
 const SubContent = styled.div`
@@ -92,13 +90,13 @@ const App = () => {
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  3-star (1730)
+                  4-star (1853)
                 </span>
               </li>
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  600
+                  334
                 </span>
               </li>
               <li>
