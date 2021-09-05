@@ -21,9 +21,9 @@ const cardHeaderStyle =
   THEME.card.head.hover.color;
 
 const cardTitleStyle = " group-hover:text-" + THEME.card.head.hover.color;
-const cardAnchorStyle = "w-full md:w-auto md:h-full lg:w-auto lg:h-full ";
+const cardAnchorStyle = "w-full md:w-auto md:h-full lg:w-auto lg:h-full group-hover:bg-customColors-dracula-green rounded-2xl";
 
-const cardlink = "rounded-2xl flex justify-around w-full flex-wrap md:w-auto md:justify-around md:items-center  md:flex-col md:space-y-2 lg:w-auto lg:justify-around lg:items-center lg:flex-col lg:space-y-2  group-hover:bg-customColors-dracula-green group-hover:text-black";
+const cardlink = "rounded-2xl flex h-auto justify-around items-center w-full flex-wrap md:w-auto md:justify-around md:items-center  md:flex-col md:space-y-2 lg:w-auto lg:justify-around lg:items-center lg:flex-col lg:space-y-2  ";
 
 const cardContentStyle =
   "bg-" +
@@ -53,7 +53,7 @@ const App = (props) => {
             {props.source}
           </CardLinks>
         </a>
-        {props.source2.length > 0 ?
+        {props.sourceLink2.length > 0 ?
           <a
             href={props.sourceLink2}
             target="_blank"

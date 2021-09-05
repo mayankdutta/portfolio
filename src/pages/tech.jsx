@@ -22,7 +22,7 @@ const App = () => {
   return (
     <>
       <Heading>
-        <SerialNo>4.</SerialNo>Tech, I am familiar with
+        <SerialNo>6.</SerialNo>Tech, I am familiar with
       </Heading>
       <HiddenHeading>Skills</HiddenHeading>
       <Icons>

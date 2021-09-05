@@ -10,6 +10,9 @@ import cc from "../../assets/cc.png"
 import ac from "../../assets/ac.png"
 import github from "../../assets/github.png"
 import hackerrank from "../../assets/hackerrank.png"
+import {
+  Handle
+} from "../../components/logo/index.jsx";
 
 const SubContent = styled.div`
   min-width: 40vw;
@@ -35,9 +38,10 @@ const App = () => {
         <Card
           name="codeforces"
           link={cf}
-          source="handle"
+          source={<Handle />}
           source2=""
           sourceLink="https://codeforces.com/profile/WhatIf"
+          sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
               <li style={title} className={titleClass}>Codeforces</li>
@@ -66,8 +70,9 @@ const App = () => {
           name="Atcoder"
           link={ac}
           sourceLink="https://atcoder.jp/users/whatif"
-          source="handle"
+          source={<Handle />}
           source2=""
+          sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
               <li style={title} className={titleClass}>Atcoder</li>
@@ -96,8 +101,9 @@ const App = () => {
           name="Codechef"
           link={cc}
           sourceLink="https://www.codechef.com/users/sharma_vikrant"
-          source="handle"
+          source={<Handle />}
           source2=""
+          sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
               <li style={title} className={titleClass}>Codechef</li>
@@ -126,8 +132,9 @@ const App = () => {
           name="My HandBook"
           link={github}
           sourceLink="https://github.com/mayankdutta/Examples"
-          source="handle"
+          source={<Handle />}
           source2=""
+          sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
               <li style={title} className={titleClass}>My handbook</li>
@@ -146,7 +153,7 @@ const App = () => {
                 </ul>
               </li>
               <li>
-                Problems are from various OJ like USACO, CF, CC, AC, UVA, CSES
+                Problems are from various OJ like <br />USACO, CF, CC, AC, UVA, CSES
               </li>
             </ul>
           }

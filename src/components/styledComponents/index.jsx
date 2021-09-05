@@ -393,11 +393,6 @@ export const CardContent = styled.span`
 
 export const CardLinks = styled.div`
 ${tw`
-md:transform
-md:rotate-90
-
-lg:transform
-lg:rotate-90
 `}
 `;
 

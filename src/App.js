@@ -9,6 +9,8 @@ import Tools from "./pages/tools.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
 import Achievements from "./pages/achievements.jsx";
+import Open from "./pages/opensource.jsx";
+
 import { Pages } from "./components/styledComponents/index.jsx";
 import { THEME } from "./colorscheme/index.jsx";
 // import "./App.scss";
@@ -33,13 +35,16 @@ const App = () => {
         <Projects />
       </Pages>
       <Pages>
+        <Achievements />
+      </Pages>
+      <Pages>
+        <Open />
+      </Pages>
+      <Pages>
         <Tech />
       </Pages>
       <Pages>
         <Tools />
-      </Pages>
-      <Pages>
-        <Achievements />
       </Pages>
       <Pages>
         <Contact />

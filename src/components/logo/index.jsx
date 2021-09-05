@@ -28,6 +28,7 @@ import { DiJavascript1 } from "react-icons/di";
 import { FcTreeStructure } from "react-icons/fc";
 
 import { RiExternalLinkLine } from "react-icons/ri"
+import { CgProfile } from "react-icons/cg"
 
 const LogoClass =
   " group hover:bg-" +
@@ -42,6 +43,9 @@ const LogoText =
   THEME.logo.hover.group.color;
 
 const Icon = "text-xl md:text-2xl lg:text-4xl list-none mx-2";
+const Icon2 = "text-xl md:text-2xl lg:text-4xl list-none my-2";
+
+const Logo2 = "flex items-center justify-center md:m-2 lg:m-2";
 
 
 export const Cpp = () => {
@@ -147,8 +151,8 @@ export const Git = () => {
 
 export const GitLogo = () => {
   return (
-    <div className="m-2">
-      <span className={Icon + " text-gray-100 "}>
+    <div className={Logo2}>
+      <span className={Icon2 + " text-gray-100 "}>
         <SiGithub />
       </span>
     </div>
@@ -156,9 +160,18 @@ export const GitLogo = () => {
 };
 export const ExternalLinkLogo = () => {
   return (
-    <div className="m-2">
-      <span className={Icon + " text-red-400 "}>
+    <div className={Logo2}>
+      <span className={Icon2 + " text-blue-400 "} >
         <RiExternalLinkLine />
+      </span>
+    </div >
+  );
+};
+export const Handle = () => {
+  return (
+    <div className={Logo2}>
+      <span className={Icon2 + " text-blue-400 "} >
+        <CgProfile />
       </span>
     </div >
   );
