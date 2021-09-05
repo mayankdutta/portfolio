@@ -27,6 +27,8 @@ import { BsFillTerminalFill } from "react-icons/bs";
 import { DiJavascript1 } from "react-icons/di";
 import { FcTreeStructure } from "react-icons/fc";
 
+import { RiExternalLinkLine } from "react-icons/ri"
+
 const LogoClass =
   " group hover:bg-" +
   THEME.logo.hover.background +
@@ -41,10 +43,11 @@ const LogoText =
 
 const Icon = "text-xl md:text-2xl lg:text-4xl list-none mx-2";
 
+
 export const Cpp = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-blue-700"}>
+      <span className={Icon + " text-blue-400"}>
         <SiCplusplus />
       </span>
       <span className={LogoText}>C++</span>
@@ -54,7 +57,7 @@ export const Cpp = () => {
 export const ReactJs = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-blue-800"}>
+      <span className={Icon + " text-blue-500"}>
         <SiReact />
       </span>
       <span className={LogoText}>ReactJs</span>
@@ -64,7 +67,7 @@ export const ReactJs = () => {
 export const Bootstrap = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-purple-700 "}>
+      <span className={Icon + " text-purple-500 "}>
         <SiBootstrap />
       </span>
       <span className={LogoText}>Bootstrap</span>
@@ -74,7 +77,7 @@ export const Bootstrap = () => {
 export const Bash = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-purple-800 "}>
+      <span className={Icon + " text-purple-400 "}>
         <SiGnubash />
       </span>
       <span className={LogoText}>Bash</span>
@@ -84,7 +87,7 @@ export const Bash = () => {
 export const Tailwind = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-blue-600 "}>
+      <span className={Icon + " text-blue-300 "}>
         <SiTailwindcss />
       </span>
       <span className={LogoText}>Tailwind</span>
@@ -104,7 +107,7 @@ export const Css = () => {
 export const Vim = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-green-700 "}>
+      <span className={Icon + " text-green-500 "}>
         <SiVim />
       </span>
       <span className={LogoText}>vimscript</span>
@@ -124,7 +127,7 @@ export const Html = () => {
 export const Js = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-yellow-800 "}>
+      <span className={Icon + " text-yellow-400 "}>
         <DiJavascript1 />
       </span>
       <span className={LogoText}>Js</span>
@@ -134,17 +137,37 @@ export const Js = () => {
 export const Git = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-gray-800 "}>
+      <span className={Icon + " text-gray-100 "}>
         <SiGithub />
       </span>
       <span className={LogoText}>Git and Github</span>
     </Logo>
   );
 };
+
+export const GitLogo = () => {
+  return (
+    <div className="m-2">
+      <span className={Icon + " text-gray-100 "}>
+        <SiGithub />
+      </span>
+    </div>
+  );
+};
+export const ExternalLinkLogo = () => {
+  return (
+    <div className="m-2">
+      <span className={Icon + " text-red-400 "}>
+        <RiExternalLinkLine />
+      </span>
+    </div >
+  );
+};
+
 export const Terminal = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-purple-800 "}>
+      <span className={Icon + " text-purple-500 "}>
         <BsFillTerminalFill />
       </span>
       <span className={LogoText}>Terminal</span>
@@ -154,7 +177,7 @@ export const Terminal = () => {
 export const Neovim = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-green-700 "}>
+      <span className={Icon + " text-green-400 "}>
         <SiNeovim />
       </span>
       <span className={LogoText}>Neovim</span>
@@ -174,7 +197,7 @@ export const Sublime = () => {
 export const Jetbrains = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-gray-800 "}>
+      <span className={Icon + " text-black"}>
         <SiJetbrains />
       </span>
       <span className={LogoText}>Jetbrains</span>
@@ -247,7 +270,7 @@ export const DS = () => {
 export const Shells = () => {
   return (
     <Logo className={LogoClass}>
-      <span className={Icon + " text-gray-700 "}>
+      <span className={Icon + " text-gray-400 "}>
         <SiPowershell />
       </span>
       <span className={LogoText}>Shells</span>

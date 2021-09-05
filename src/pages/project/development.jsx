@@ -10,7 +10,14 @@ import {
   Neovim,
   Vim,
   Bootstrap,
+  GitLogo,
+  ExternalLinkLogo
 } from "../../components/logo/index.jsx";
+
+import keep from "../../assets/keep.png";
+import stalker from "../../assets/stalker.jpeg";
+import rto from "../../assets/rto.jpg";
+import lvim from "../../assets/lvim.png";
 
 const SubContent = styled.div`
   min-width: 40vw;
@@ -18,27 +25,30 @@ const SubContent = styled.div`
   grid
   grid-cols-1
   gap-y-4
-  
-  md:grid
-  md:grid-cols-1
-  md:gap-y-6
-  
-  lg:grid
-  lg:grid-cols-2
-  lg:gap-y-8
-
 `};
 `;
+
+const title = {
+  color: "#5AE87C",
+  textDecoration: "none",
+  listStyle: "none",
+}
+const titleClass = "md:text-xl lg:text-3xl font-mono tracking-wider my-2";
+
 const App = () => {
   return (
     <>
       <SubContent>
         <Card
           name="Google keep"
-          link="https://www.google.com/images/icons/product/keep-512.png"
-          href="https://github.com/mayankdutta/google-keep-clone"
+          link={keep}
+          source={<GitLogo />}
+          source2={<ExternalLinkLogo />}
+          sourceLink="https://github.com/mayankdutta/google-keep-clone"
+          sourceLink2="https://github.com/mayankdutta/google-keep-clone"
           content={
             <ul className="list-disc list-outside ml-2">
+              <li style={title} className={titleClass}>Google keep</li>
               <li> This one is the clone of Google keep.</li>
               <li> Allows user to store their notes</li>
               <li> Can also be used as a TODO list</li>
@@ -53,10 +63,14 @@ const App = () => {
         />
         <Card
           name="Stalker"
-          link="https://static.toiimg.com/thumb/84268058.cms?width=680&height=512&imgsize=93489"
-          href="https://github.com/mayankdutta/stalker"
+          link={stalker}
+          source={<GitLogo />}
+          source2={<ExternalLinkLogo />}
+          sourceLink="https://github.com/mayankdutta/stalker"
+          sourceLink2="https://mayankdutta.github.io/stalker/"
           content={
             <ul class="list-disc list-outside ml-2">
+              <li style={title} className={titleClass}>Stalker</li>
               <li> Fetches user data from various famous online judges</li>
               <li> Present user stats in graphs and tabular form.</li>
               <li> Help user to guage his abilities.</li>
@@ -71,10 +85,14 @@ const App = () => {
         />
         <Card
           name="RTO"
-          link="https://pbs.twimg.com/profile_images/1137634760879034369/BAJJJ13E_400x400.jpg"
-          href="https://github.com/team-rto/RTO_web_Project"
+          link={rto}
+          source={<GitLogo />}
+          source2={<ExternalLinkLogo />}
+          sourceLink="https://github.com/team-rto/RTO_web_Project"
+          sourceLink2="https://github.com/team-rto/RTO_web_Project"
           content={
             <ul className="list-disc list-outside ml-2">
+              <li style={title} className={titleClass}>RTO</li>
               <li>
                 This project I developed in
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
@@ -112,10 +130,14 @@ const App = () => {
         />
         <Card
           name="LunarVim"
-          link="https://repository-images.githubusercontent.com/145050544/3387d880-dc4f-11eb-8ecf-609ba3ec8a40"
-          href="https://github.com/ChristianChiarulli/LunarVim"
+          link={lvim}
+          source={<GitLogo />}
+          source2={<ExternalLinkLogo />}
+          sourceLink="https://github.com/ChristianChiarulli/LunarVim"
+          sourceLink2="https://github.com/mayankdutta/.config"
           content={
             <ul className="  list-disc list-outside ml-2">
+              <li style={title} className={titleClass}>LunarVim</li>
               <li>
                 All this you are seeing wouldn't be possible if it weren't for
                 this editor

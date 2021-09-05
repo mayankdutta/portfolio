@@ -299,13 +299,15 @@ export const FooterIcon = styled.li`
 `}
 `;
 export const Card = styled.div`
-  border: 2px solid ${THEME.card.overall.border};
+  position: relative;
   ${tw`
     flex
     flex-wrap
 
-    justify-center
-    items-center
+flex-grow
+flex-shrink
+
+    border-4 border-gray-800
 
     rounded-2xl
 
@@ -322,9 +324,13 @@ export const Card = styled.div`
 `;
 
 export const CardHeader = styled.div`
+  z-index: -1;
   ${tw`
     flex
     flex-col
+
+    flex-shrink
+    flex-grow-0
 
     items-center
     justify-center
@@ -336,31 +342,33 @@ export const CardHeader = styled.div`
 
     group-hover:rounded-2xl
     group-hover:text-white
-`}
+  `}
 `;
 
 export const CardImage = styled.div`
+  z-index: 1;
   ${tw`
-    h-24
-    w-24
+  lg:w-44
+  md:w-32
+  w-20
     rounded-full
-`}
+  `}
 `;
 
 export const CardTitle = styled.div`
   ${tw`
     text-sm
-    flex
-    items-center
-    justify-center
 
     md:text-base
     lg:text-xl
 `}
 `;
 export const CardContent = styled.span`
+  z-index: 1;
   ${tw`
     p-2
+    px-8
+
     text-xs
     flex
     flex-wrap
@@ -380,6 +388,16 @@ export const CardContent = styled.span`
     lg:flex-grow
     lg:w-full
     lg:h-full
+`}
+`;
+
+export const CardLinks = styled.div`
+${tw`
+md:transform
+md:rotate-90
+
+lg:transform
+lg:rotate-90
 `}
 `;
 
