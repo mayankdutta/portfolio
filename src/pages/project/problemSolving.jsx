@@ -10,6 +10,7 @@ import cc from "../../assets/cc.png"
 import ac from "../../assets/ac.png"
 import github from "../../assets/github.png"
 import hackerrank from "../../assets/hackerrank.png"
+import lc from "../../assets/lc.png"
 import {
   Handle
 } from "../../components/logo/index.jsx";
@@ -48,7 +49,7 @@ const App = () => {
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  Pupil (1398)
+                  Pupil
                 </span>
               </li>
               <li>
@@ -60,7 +61,7 @@ const App = () => {
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  20
+                  22
                 </span>
               </li>
             </ul>
@@ -79,7 +80,7 @@ const App = () => {
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  Brown (434)
+                  Brown (475)
                 </span>
               </li>
               <li>
@@ -91,14 +92,14 @@ const App = () => {
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  9
+                  13
                 </span>
               </li>
             </ul>
           }
         />
         <Card
-          name="Codechef"
+          name="CodeChef"
           link={cc}
           sourceLink="https://www.codechef.com/users/sharma_vikrant"
           source={<Handle />}
@@ -106,25 +107,105 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
-              <li style={title} className={titleClass}>Codechef</li>
+              <li style={title} className={titleClass}>CodeChef</li>
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  4-star (1853)
+                  ⭐⭐⭐⭐
+                  (Rating: 1919)
                 </span>
               </li>
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  334
+                  223
                 </span>
               </li>
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  21
+                  25
                 </span>
               </li>
+            </ul>
+          }
+        />
+        <Card
+          name="Leetcode"
+          link={lc}
+          sourceLink="https://leetcode.com/mynk_shrma/"
+          source={<Handle />}
+          source2=""
+          sourceLink2=""
+          content={
+            <ul className="list-disc  list-outside ml-2">
+              <li style={title} className={titleClass}>Leetcode</li>
+              <li>
+                Highest Rating:
+                <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                  1580
+                </span>
+              </li>
+              <li>
+                Highest Rank
+                <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                  2155
+                </span>
+              </li>
+            </ul>
+          }
+        />
+        <Card
+          name="HackerRank"
+          link={hackerrank}
+          sourceLink="https://www.hackerrank.com/mynk_shrma"
+          source={<Handle />}
+          source2=""
+          sourceLink2=""
+          content={
+            <ul className="list-disc  list-outside ml-2">
+              <li style={title} className={titleClass}>HackerRank</li>
+              <table>
+                <tr>
+                  <td>
+                    - Problem solving
+                  </td>
+                  <td>
+                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                      ⭐⭐⭐⭐
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>- C++</td>
+                  <td>
+                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                      ⭐⭐⭐⭐⭐
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    - Java
+
+                  </td>
+                  <td>
+                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                      ⭐⭐⭐
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    - JS
+                  </td>
+                  <td>
+                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                      ⭐⭐⭐
+                    </span>
+                  </td>
+                </tr>
+              </table>
             </ul>
           }
         />

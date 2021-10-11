@@ -368,24 +368,22 @@ export const CardContent = styled.span`
   ${tw`
     p-2
     px-8
+    w-full
 
     text-xs
     flex
     flex-wrap
-    flex-shrink
+
     items-center
     justify-center
 
     group-hover:rounded-2xl
 
     md:text-base
-    md:flex-grow
     md:w-full
     md:h-full
 
-
     lg:text-lg
-    lg:flex-grow
     lg:w-full
     lg:h-full
 `}
