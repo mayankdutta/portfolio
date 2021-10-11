@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.25b96388.chunk.css",
-    "main.js": "/portfolio/static/js/main.949bdbb5.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.949bdbb5.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f8bcaeed.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f8bcaeed.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.ed01e15e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.ed01e15e.js.map",
     "static/js/2.d6aa648e.chunk.js": "/portfolio/static/js/2.d6aa648e.chunk.js",
@@ -16,6 +16,7 @@
     "static/media/cf.11f0bb11.png": "/portfolio/static/media/cf.11f0bb11.png",
     "static/media/github.ff264807.png": "/portfolio/static/media/github.ff264807.png",
     "static/media/hackerrank.eab675a5.png": "/portfolio/static/media/hackerrank.eab675a5.png",
+    "static/media/lc.c79f333b.png": "/portfolio/static/media/lc.c79f333b.png",
     "static/media/lvim.315bbca1.png": "/portfolio/static/media/lvim.315bbca1.png",
     "static/media/rto.354ebe1a.jpg": "/portfolio/static/media/rto.354ebe1a.jpg",
     "static/media/stalker.8e038934.jpeg": "/portfolio/static/media/stalker.8e038934.jpeg",
@@ -25,6 +26,6 @@
     "static/js/runtime-main.ed01e15e.js",
     "static/js/2.d6aa648e.chunk.js",
     "static/css/main.25b96388.chunk.css",
-    "static/js/main.949bdbb5.chunk.js"
+    "static/js/main.f8bcaeed.chunk.js"
   ]
 }
