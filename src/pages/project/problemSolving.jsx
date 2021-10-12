@@ -10,6 +10,7 @@ import cc from "../../assets/cc.png"
 import ac from "../../assets/ac.png"
 import github from "../../assets/github.png"
 import hackerrank from "../../assets/hackerrank.png"
+import cses from "../../assets/cses.png"
 import lc from "../../assets/lc.png"
 import {
   Handle
@@ -150,6 +151,25 @@ const App = () => {
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
                   2155
+                </span>
+              </li>
+            </ul>
+          }
+        />
+        <Card
+          name="CSES"
+          link={cses}
+          sourceLink="https://cses.fi/user/27362"
+          source={<Handle />}
+          source2=""
+          sourceLink2=""
+          content={
+            <ul className="list-disc  list-outside ml-2">
+              <li style={title} className={titleClass}>CSES</li>
+              <li>
+                Problem solved
+                <span style={{ color: THEME.text.subHeading }} className="mx-2">
+                  67
                 </span>
               </li>
             </ul>

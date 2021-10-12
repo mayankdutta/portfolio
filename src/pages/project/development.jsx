@@ -45,7 +45,7 @@ const App = () => {
           source={<GitLogo />}
           source2={<ExternalLinkLogo />}
           sourceLink="https://github.com/mayankdutta/google-keep-clone"
-          sourceLink2="https://github.com/mayankdutta/google-keep-clone"
+          sourceLink2="https://mayankdutta.github.io/google-keep-clone/"
           content={
             <ul className="list-disc list-outside ml-2">
               <li style={title} className={titleClass}>Google keep</li>
@@ -87,9 +87,9 @@ const App = () => {
           name="RTO"
           link={rto}
           source={<GitLogo />}
-          source2={<ExternalLinkLogo />}
           sourceLink="https://github.com/team-rto/RTO_web_Project"
-          sourceLink2="https://github.com/team-rto/RTO_web_Project"
+          source2=""
+          sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
               <li style={title} className={titleClass}>RTO</li>
@@ -132,9 +132,9 @@ const App = () => {
           name="LunarVim"
           link={lvim}
           source={<GitLogo />}
-          source2={<ExternalLinkLogo />}
-          sourceLink="https://github.com/ChristianChiarulli/LunarVim"
-          sourceLink2="https://github.com/mayankdutta/.config"
+          sourceLink="https://github.com/mayankdutta/.config"
+          source2=""
+          sourceLink2=""
           content={
             <ul className="  list-disc list-outside ml-2">
               <li style={title} className={titleClass}>LunarVim</li>
