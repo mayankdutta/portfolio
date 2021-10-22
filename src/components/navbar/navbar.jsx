@@ -26,7 +26,7 @@ const App = () => {
       </NavbarLogo>
       <NavbarLogo className="flex-row-reverse">
         <a
-          href="https://drive.google.com/file/d/1lP82RoLGZck1clAdcnG929l5BqlmXZTY/view?usp=sharing"
+          href="https://drive.google.com/file/d/1knUubppCjzlnKfBXKzuFAKDreMDJl9Va/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
         >

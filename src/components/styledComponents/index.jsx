@@ -254,13 +254,16 @@ export const Content = styled.div`
 export const SubContent = styled.div`
   color: ${THEME.text.normal};
   min-width: 40vw;
-  /* max-width: 60vw; */
   ${tw`
+    w-full
+    text-xs
+    md:text-lg
+    lg:text-xl
 
-text-xs
-  md:text-lg
-  lg:text-xl
-`};
+    lg:min-w-min
+    lg:max-w-screen-sm
+
+  `};
 `;
 
 export const Icons = styled.ul`

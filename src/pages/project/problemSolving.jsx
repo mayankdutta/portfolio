@@ -56,7 +56,7 @@ const App = () => {
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  4165
+                  1925
                 </span>
               </li>
               <li>
@@ -87,7 +87,7 @@ const App = () => {
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  1916
+                  1532
                 </span>
               </li>
               <li>
