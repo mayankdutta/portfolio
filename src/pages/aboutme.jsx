@@ -16,13 +16,16 @@ const App = () => {
         <SerialNo>1. </SerialNo> Few words about me.
       </Heading>
       <HiddenHeading> about </HiddenHeading>
-      <Content >
+      <Content>
         <SubContent className="">
-          <SubHeading>Hello !</SubHeading>
-          My name is Mayank, an Engineering student from India. I design Web and
-          problem solving as a hobby. I use (Neo)Vim as my primay IDE and spend
-          most of my time on it. I am deeply passionate about software
-          engineering and ways to increase productivity always fascinate me.
+          <SubHeading className="my-2">Current Status.</SubHeading>
+          <ul className="ml-8 list-disc">
+            <li>3rd year, BTech, Jamia Millia islamia</li>
+            <li> Exploring realm of web with ReactJs, VanillaJs, Sass</li>
+            <li> problem solving in C++/Java.</li>
+            <li> learning UI, UX.</li>
+            <li> Exploring Vim, js, Linux.</li>
+          </ul>
         </SubContent>
         <SubContent className="">
           <SubHeading>My Skills</SubHeading>

@@ -63,7 +63,7 @@ export const CustomSubHeading = styled.div`
     md:font-medium
     md:w-96
 
-    lg:text-xl
+    lg:text-3xl
     lg:font-bold
     lg:w-96
 `};

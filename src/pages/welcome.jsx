@@ -8,10 +8,8 @@ import {
 const App = () => {
   return (
     <CustomContent>
-      <CustomHeading>Mayank Dutta</CustomHeading>
-      <CustomSubHeading>Competitive Programmer.</CustomSubHeading>
-      <CustomSubHeading>UI/UX designer. </CustomSubHeading>
-      <CustomSubHeading>Vim user</CustomSubHeading>
+      <CustomSubHeading>Hii, I am</CustomSubHeading>
+      <CustomHeading className="my-2">Mayank </CustomHeading>
     </CustomContent>
   );
 };

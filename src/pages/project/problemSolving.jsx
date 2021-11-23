@@ -1,20 +1,25 @@
 import React from "react";
 import Card from "../../components/card/index.jsx";
-import { } from "../../components/styledComponents/index.jsx";
+import {} from "../../components/styledComponents/index.jsx";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { THEME } from "../../colorscheme/index.jsx";
 
-import cf from "../../assets/cf.png"
-import cc from "../../assets/cc.png"
-import ac from "../../assets/ac.png"
-import github from "../../assets/github.png"
-import hackerrank from "../../assets/hackerrank.png"
-import cses from "../../assets/cses.png"
-import lc from "../../assets/lc.png"
+import cf from "../../assets/cf.png";
+import cc from "../../assets/cc.png";
+import ac from "../../assets/ac.png";
+import github from "../../assets/github.png";
+import hackerrank from "../../assets/hackerrank.png";
+import cses from "../../assets/cses.png";
+import lc from "../../assets/lc.png";
+import { Handle } from "../../components/logo/index.jsx";
 import {
-  Handle
-} from "../../components/logo/index.jsx";
+  Codeforces,
+  Atcoder,
+  Codechef,
+  Leetcode,
+  Hackerrank,
+} from "../../profileInfo";
 
 const SubContent = styled.div`
   min-width: 40vw;
@@ -30,7 +35,7 @@ const title = {
   color: "#5AE87C",
   textDecoration: "none",
   listStyle: "none",
-}
+};
 const titleClass = "md:text-xl lg:text-3xl font-mono tracking-wider my-2";
 
 const App = () => {
@@ -46,23 +51,25 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
-              <li style={title} className={titleClass}>Codeforces</li>
+              <li style={title} className={titleClass}>
+                Codeforces
+              </li>
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  Pupil
+                  {Codeforces.rating}
                 </span>
               </li>
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  1925
+                  {Codeforces.rank}
                 </span>
               </li>
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  22
+                  {Codeforces.contestGiven}
                 </span>
               </li>
             </ul>
@@ -77,11 +84,13 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
-              <li style={title} className={titleClass}>Atcoder</li>
+              <li style={title} className={titleClass}>
+                Atcoder
+              </li>
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  Brown (475)
+                  {Atcoder.rank} ({Atcoder.rating})
                 </span>
               </li>
               <li>
@@ -93,7 +102,7 @@ const App = () => {
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  13
+                  {Atcoder.contestGiven}
                 </span>
               </li>
             </ul>
@@ -108,12 +117,16 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
-              <li style={title} className={titleClass}>CodeChef</li>
+              <li style={title} className={titleClass}>
+                CodeChef
+              </li>
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  ⭐⭐⭐⭐
-                  (Rating: 1919)
+                  {Codechef.star.map((value, index) => {
+                    return <span>⭐</span>;
+                  })}
+                  <span className="ml-2">(Rating: {Codechef.rating})</span>
                 </span>
               </li>
               <li>
@@ -125,7 +138,7 @@ const App = () => {
               <li>
                 contest given
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  25
+                  {Codechef.ContestGiven}
                 </span>
               </li>
             </ul>
@@ -140,17 +153,19 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
-              <li style={title} className={titleClass}>Leetcode</li>
+              <li style={title} className={titleClass}>
+                Leetcode
+              </li>
               <li>
                 Highest Rating:
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  1580
+                  {Leetcode.rating}
                 </span>
               </li>
               <li>
                 Highest Rank
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                  2155
+            {Leetcode.rank}
                 </span>
               </li>
             </ul>
@@ -165,7 +180,9 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
-              <li style={title} className={titleClass}>CSES</li>
+              <li style={title} className={titleClass}>
+                CSES
+              </li>
               <li>
                 Problem solved
                 <span style={{ color: THEME.text.subHeading }} className="mx-2">
@@ -184,44 +201,59 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc  list-outside ml-2">
-              <li style={title} className={titleClass}>HackerRank</li>
+              <li style={title} className={titleClass}>
+                HackerRank
+              </li>
               <table>
                 <tr>
+                  <td>- Problem solving</td>
                   <td>
-                    - Problem solving
-                  </td>
-                  <td>
-                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                      ⭐⭐⭐⭐
+                    <span
+                      style={{ color: THEME.text.subHeading }}
+                      className="mx-2"
+                    >
+                      {Hackerrank.star.problemSolving.map((value, index) => {
+                        return <span>⭐</span>;
+                      })}
                     </span>
                   </td>
                 </tr>
                 <tr>
                   <td>- C++</td>
                   <td>
-                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                      ⭐⭐⭐⭐⭐
+                    <span
+                      style={{ color: THEME.text.subHeading }}
+                      className="mx-2"
+                    >
+                      {Hackerrank.star.cpp.map((value, index) => {
+                        return <span>⭐</span>;
+                      })}
                     </span>
                   </td>
                 </tr>
                 <tr>
+                  <td>- Java</td>
                   <td>
-                    - Java
-
-                  </td>
-                  <td>
-                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                      ⭐⭐⭐
+                    <span
+                      style={{ color: THEME.text.subHeading }}
+                      className="mx-2"
+                    >
+                      {Hackerrank.star.java.map((value, index) => {
+                        return <span>⭐</span>;
+                      })}
                     </span>
                   </td>
                 </tr>
                 <tr>
+                  <td>- JS</td>
                   <td>
-                    - JS
-                  </td>
-                  <td>
-                    <span style={{ color: THEME.text.subHeading }} className="mx-2">
-                      ⭐⭐⭐
+                    <span
+                      style={{ color: THEME.text.subHeading }}
+                      className="mx-2"
+                    >
+                      {Hackerrank.star.js.map((value, index) => {
+                        return <span>⭐</span>;
+                      })}
                     </span>
                   </td>
                 </tr>
@@ -238,7 +270,9 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
-              <li style={title} className={titleClass}>My handbook</li>
+              <li style={title} className={titleClass}>
+                My handbook
+              </li>
               <li>
                 Consist my
                 <ul className="list-disc list-outside ml-2">
@@ -254,7 +288,8 @@ const App = () => {
                 </ul>
               </li>
               <li>
-                Problems are from various OJ like <br />USACO, CF, CC, AC, UVA, CSES
+                Problems are from various OJ like <br />
+                USACO, CF, CC, AC, UVA, CSES
               </li>
             </ul>
           }

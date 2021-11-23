@@ -3,10 +3,8 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import Card from "../components/card/index.jsx";
 import { THEME } from "../colorscheme/index.jsx";
-import {
-  GitLogo,
-  ExternalLinkLogo
-} from "../components/logo/index.jsx";
+import { GitLogo, ExternalLinkLogo } from "../components/logo/index.jsx";
+import Lvim from "../assets/lvim.png";
 
 import {
   Heading,
@@ -30,7 +28,7 @@ const title = {
   color: "#5AE87C",
   textDecoration: "none",
   listStyle: "none",
-}
+};
 const titleClass = "md:text-xl lg:text-3xl font-mono tracking-wider my-2";
 
 const App = () => {
@@ -50,7 +48,9 @@ const App = () => {
           sourceLink2=""
           content={
             <ul className="list-disc list-outside ml-2">
-              <li style={title} className={titleClass}>Category wise problems</li>
+              <li style={title} className={titleClass}>
+                Category wise problems
+              </li>
               <li> Not just any github solution bank.</li>
               <li> Contributors have to follow certain rules like ... </li>
               <ul className="ml-2 list-decimal list-outside">
@@ -64,7 +64,11 @@ const App = () => {
                   Some instances where you were stuck
                 </li>
               </ul>
-              <li> Basically this little markdown file has to guide someone with very little knowledge.</li>
+              <li>
+                {" "}
+                Basically this little markdown file has to guide someone with
+                very little knowledge.
+              </li>
             </ul>
           }
         />
@@ -77,9 +81,34 @@ const App = () => {
           sourceLink2="https://usaco.guide"
           content={
             <ul class="list-disc list-outside ml-2">
-              <li style={title} className={titleClass}> USACO</li>
+              <li style={title} className={titleClass}>
+                {" "}
+                USACO
+              </li>
               <li> Solving problem actively on this platform</li>
-              <li> Contributing by correcting buggy code, removing logical / syntax error</li>
+              <li>
+                {" "}
+                Contributing by correcting buggy code, removing logical / syntax
+                error
+              </li>
+            </ul>
+          }
+        />
+        <Card
+          name="LunarVim"
+          link={Lvim}
+          source={<GitLogo />}
+          source2={<ExternalLinkLogo />}
+          sourceLink="https://github.com/LunarVim/LunarVim"
+          sourceLink2="https://www.lunarvim.org/"
+          content={
+            <ul class="list-disc list-outside ml-2">
+              <li style={title} className={titleClass}>
+                {" "}
+                LunarVim
+              </li>
+              <li>Extended autoformatting support for C/C++.</li>
+              <li>propsed some personal configs, keybindings</li>
             </ul>
           }
         />

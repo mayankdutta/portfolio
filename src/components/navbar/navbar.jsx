@@ -1,5 +1,6 @@
 import { React, useState, useEffect } from "react";
 import Theme from "../../colorscheme/index.jsx";
+import {Resume} from "../../profileInfo";
 
 import {
   Navbar,
@@ -26,7 +27,7 @@ const App = () => {
       </NavbarLogo>
       <NavbarLogo className="flex-row-reverse">
         <a
-          href="https://drive.google.com/file/d/1knUubppCjzlnKfBXKzuFAKDreMDJl9Va/view?usp=sharing"
+          href={Resume.link}
           target="_blank"
           rel="noopener noreferrer"
         >
