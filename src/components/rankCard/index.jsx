@@ -7,21 +7,23 @@ import {
 const App = (props) => {
   return (
     <>
-      <SubContent className="lg:w-2/3">
-        <MainHeading> {props.rank}
+      <SubContent className="">
+        <MainHeading className="underline italic h-full ">
+          {props.rank}
         </MainHeading>
-        <div className="ml-4">
+
+        <span className="h-full font-sans font-medium tracking-wider">
           {props.content}
           <a
             href={props.link}
             rel="noopeener noreferrer"
             target="_blank"
-            className="text-customColors-dracula-pink underline w-full">
+            className="text-customColors-dracula-pink underline w-full"
+          >
             {props.linkText}
           </a>
-        </div>
+        </span>
       </SubContent>
-
     </>
   );
 };

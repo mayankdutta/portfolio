@@ -21,7 +21,7 @@ const App = () => {
       <Heading>
         <SerialNo>7. </SerialNo> My Tool Belt
       </Heading>
-      <HiddenHeading> Tools </HiddenHeading>
+      <HiddenHeading> productive </HiddenHeading>
       <Icons>
         <Neovim />
         <Git />

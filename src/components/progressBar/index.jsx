@@ -3,7 +3,7 @@ import { THEME } from "../../colorscheme/index.jsx";
 const App = (props) => {
   return (
     <>
-      <div className="relative pt-1">
+      <div className="ml-4 relative pt-1">
         {props.language}
         <div
           style={{}}

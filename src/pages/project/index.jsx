@@ -22,7 +22,7 @@ const App = () => {
       <Heading>
         <SerialNo>3. </SerialNo> Love to spend time with
       </Heading>
-      <HiddenHeading> Projects </HiddenHeading>
+      <HiddenHeading> spend time </HiddenHeading>
       <Content>
         <ButtonLarge>
           <div

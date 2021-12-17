@@ -24,7 +24,7 @@ const App = () => {
       <Heading>
         <SerialNo>6.</SerialNo>Tech, I am familiar with
       </Heading>
-      <HiddenHeading>Skills</HiddenHeading>
+      <HiddenHeading>techstack</HiddenHeading>
       <Icons>
         <Cpp />
         <ReactJs />

@@ -1,16 +1,15 @@
-export const Resume= {
-  link:
-    "https://drive.google.com/file/d/1BTxACm2_2kbDQObkH2IaOQSc7NV89Sru/view?usp=sharing",
+export const Resume = {
+  link: "https://drive.google.com/file/d/1mOmBKoDnBsBQF4NG62npC6NtQZi38AaX/view?usp=sharing",
 };
 export const Codeforces = {
-  rating: 1250,
+  rating: 1254,
   rank: "Pupil",
   contestGiven: 22,
 };
 
 export const Atcoder = {
   rank: "Brown",
-  rating: 552,
+  rating: 712,
   contestGiven: 13,
 };
 
@@ -21,7 +20,7 @@ export const Codechef = {
 };
 
 export const Leetcode = {
-  rating: 1611,
+  rating: 1627,
   rank: 2155,
 };
 

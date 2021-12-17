@@ -162,7 +162,7 @@ export const HiddenHeading = styled.div`
     text-3xl
     inline-flex
     tracking-wide
-    font-black
+    font-bold
 
     md:left-40
     md:bottom-20
@@ -222,9 +222,7 @@ export const MainHeading = styled.div`
     text-2xl
     tracking-wider
     font-medium
-
     md:text-2xl
-
     lg:text-4xl
 `};
 `;
@@ -393,7 +391,7 @@ export const CardContent = styled.span`
 `;
 
 export const CardLinks = styled.div`
-${tw`
+  ${tw`
 `}
 `;
 
