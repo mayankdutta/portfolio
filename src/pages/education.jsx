@@ -17,6 +17,7 @@ const App = () => {
         <SerialNo>2. </SerialNo>Education
       </Heading>
       <HiddenHeading>Education</HiddenHeading>
+
       <Content>
         <SubContent>
           <MinorHeading>Faculty of Engineering</MinorHeading>
@@ -35,6 +36,7 @@ const App = () => {
           </div>
         </SubContent>
       </Content>
+
       <Content>
         <SubContent>
           <SubHiddenHeading>

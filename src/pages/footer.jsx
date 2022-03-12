@@ -52,7 +52,7 @@ const App = () => {
           }
         >
           <a
-            href="https://www.linkedin.com/in/mayank-dutta-5a5640157/"
+            href="https://linkedin.com/in/mayankdutta"
             target="_blank"
             rel="noopener noreferrer"
           >

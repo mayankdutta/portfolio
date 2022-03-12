@@ -9,6 +9,8 @@ import {
   SubContent,
 } from "../components/styledComponents/index.jsx";
 
+import { Skills } from "../profileInfo";
+
 const App = () => {
   return (
     <>
@@ -29,12 +31,11 @@ const App = () => {
         </SubContent>
         <SubContent className="">
           <SubHeading>My Skills</SubHeading>
-          <ProgressBar width="90%" language="C++" />
-          <ProgressBar width="60%" language="ReactJs" />
-          <ProgressBar width="80%" language="Javascript" />
-          <ProgressBar width="50%" language="Shell scripting" />
-          <ProgressBar width="93%" language="Data structure and Algorithms" />
-          <ProgressBar width="83%" language="vim" />
+          {Skills.map((skill, index) => {
+            return (
+              <ProgressBar width={skill.width} language={skill.language} />
+            );
+          })}
         </SubContent>
       </Content>
     </>
