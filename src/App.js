@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Welcome from "./pages/welcome.jsx";
 import Navbar from "./components/navbar/navbar.jsx";
 import AboutMe from "./pages/aboutme.jsx";
@@ -10,18 +10,26 @@ import Contact from "./pages/contact.jsx";
 import Footer from "./pages/footer.jsx";
 import Achievements from "./pages/achievements.jsx";
 import Open from "./pages/opensource.jsx";
+import Hook from "./hooks/Sheet";
 
 import { Pages } from "./components/styledComponents/index.jsx";
 import { THEME } from "./colorscheme/index.jsx";
 // import "./App.scss";
 
 const App = () => {
+  const [userDetails, setUserDetails] = useState([
+    {
+      title: "cv",
+      data: "www.google.com",
+    },
+  ]);
   return (
     <div
       style={{ backgroundColor: THEME.body.background }}
       className="px-4 h-full py-2"
     >
-      <Navbar />
+      <Hook userDetails={userDetails} setUserDetails={setUserDetails} />
+      <Navbar cv={userDetails[0].data} />
       <Pages className="flex justify-center items-center">
         <Welcome />
       </Pages>

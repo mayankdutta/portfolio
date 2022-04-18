@@ -1,13 +1,14 @@
 import { React, useState, useEffect } from "react";
 import Theme from "../../colorscheme/index.jsx";
-import {Resume} from "../../profileInfo";
+import { Resume } from "../../profileInfo";
+import CV from "../../hooks/Sheet";
 
 import {
   Navbar,
   NavbarLogo,
 } from "../../components/styledComponents/index.jsx";
 
-const App = () => {
+const App = ({ cv }) => {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
     console.log("Calling start");
@@ -27,7 +28,8 @@ const App = () => {
       </NavbarLogo>
       <NavbarLogo className="flex-row-reverse">
         <a
-          href={Resume.link}
+          // href={Resume.link}
+          href={cv}
           target="_blank"
           rel="noopener noreferrer"
         >

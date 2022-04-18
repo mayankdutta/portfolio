@@ -1,6 +1,7 @@
 // import { Dark } from "./dracula.jsx";
 import { Dark } from "./dracula.jsx";
 import { Light } from "./light.jsx";
+import { themeContext } from "../Context";
 
 // import { THEME } from "./light.jsx";
 
