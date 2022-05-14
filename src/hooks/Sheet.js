@@ -5,7 +5,6 @@ const url =
   "https://docs.google.com/spreadsheets/d/e/2PACX-1vQGLC45w7YqwmVU0LJG5xoeaMuM51kjUgpj13O7tan_16-mf8EFJQPPKgqJ4KF32T-lxV-pIEasj1tq/pub?gid=0&single=true&output=csv";
 
 const Data = ({ userDetails, setUserDetails }) => {
-  const [data, setData] = useState({});
 
   useEffect(() => {
     Papa.parse(url, {

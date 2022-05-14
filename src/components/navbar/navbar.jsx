@@ -8,6 +8,7 @@ import {
   NavbarLogo,
 } from "../../components/styledComponents/index.jsx";
 
+
 const App = ({ cv }) => {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
@@ -26,16 +27,18 @@ const App = ({ cv }) => {
       >
         {darkMode ? <span> </span> : <span></span>}
       </NavbarLogo>
-      <NavbarLogo className="flex-row-reverse">
-        <a
-          // href={Resume.link}
-          href={cv}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Resume
-        </a>
-      </NavbarLogo>
+      {cv.length > 0 ? (
+        <NavbarLogo className="flex-row-reverse">
+          <a href={cv} target="_blank" rel="noopener noreferrer">
+            Resume
+          </a>
+        </NavbarLogo>
+      ) : (
+        <NavbarLogo className="flex-row-reverse">
+          Fetching ...
+        </NavbarLogo>
+      )}
+
       {/*
       <NavComponents>
 

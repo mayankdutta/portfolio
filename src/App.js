@@ -20,7 +20,7 @@ const App = () => {
   const [userDetails, setUserDetails] = useState([
     {
       title: "cv",
-      data: "www.google.com",
+      data: "",
     },
   ]);
   return (
@@ -29,7 +29,7 @@ const App = () => {
       className="px-4 h-full py-2"
     >
       <Hook userDetails={userDetails} setUserDetails={setUserDetails} />
-      <Navbar cv={userDetails[0].data} />
+      <Navbar cv={userDetails[0].data}  />
       <Pages className="flex justify-center items-center">
         <Welcome />
       </Pages>
